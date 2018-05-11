@@ -1,7 +1,7 @@
 body, html {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    width: 1600px !important;
+    /*width: 1600px !important;*/
     height: 100% !important;
     background: url("../img/background.png");
     font-size: 22px;
@@ -201,7 +201,7 @@ li {
     margin: 0;
     padding: 0;
     display: inline;
-
+    overflow: hidden;
 }
 
 .gallery ul li img {
@@ -210,7 +210,7 @@ li {
     width: 40px;
     height: 40px;
     object-fit: cover;
-    /*transform: scale(1.5);*/
+    transform: scale(1.5);
 }
 
 .social {
