@@ -1,0 +1,312 @@
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.border {
+  border: 1px solid #030303;
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: column;
+  -webkit-box-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.top-line {
+  width: 100%;
+  height: 10px;
+  background-color: #2dcb71;
+}
+header {
+  background: url("../img/header/img.png") no-repeat;
+  height: 600px;
+  background-size: 100% 600px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: row;
+  -webkit-box-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: row;
+  -webkit-box-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 80%;
+  height: 80%;
+  align-self: flex-end;
+}
+.hand {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+}
+.phone-img {
+  width: 162px;
+  height: 230px;
+  position: absolute;
+  padding: 63px 0 0 66px;
+}
+.title {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: column;
+  -webkit-box-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 50%;
+}
+.logo-title {
+  font-family: "Pacifico", cursive;
+  font-size: 60px;
+  line-height: 20px;
+  color: #fff;
+  margin: 70px 15px;
+}
+.logo-title span {
+  color: #2dcb71;
+}
+.title p {
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+.os-icons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: row;
+  -webkit-box-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  margin-top: 30px;
+}
+.icon-cont {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #030303;
+  text-align: center;
+  margin: 5px;
+  display: block;
+  opacity: 0.5;
+}
+.icon {
+  width: 20px;
+  height: 25px;
+  padding-top: 10px;
+}
+.icon-cont:hover {
+  background-color: #2ecc71;
+  opacity: unset;
+  cursor: pointer;
+}
+.service-block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: row;
+  -webkit-box-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.service-block p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.service {
+  text-align: center;
+  width: 20%;
+  margin: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.icon-serv {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: url("../img/features/container.png") no-repeat;
+  text-align: center;
+  margin: 5px 2px;
+  display: inline-block;
+}
+.big-icon {
+  padding: 25px 0;
+}
+.second-block {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #e3e3e3;
+}
+.container {
+  width: 30%;
+  padding: 40px;
+}
+.container p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.mail {
+  height: 56px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #848484;
+  border: 1px solid #c8c8c8;
+  padding: 0 30px;
+  border-radius: 15px 0 0 15px;
+}
+.btn {
+  width: 141px;
+  height: 56px;
+  border-radius: 0 15px 15px 0;
+  background-color: #2dcb71;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: -7px;
+}
+.info {
+  width: 887px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #848484;
+  font-style: italic;
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+}
+.third-block h3 {
+  font-size: 18px;
+  line-height: 20px;
+  color: #2e2e2e;
+  font-weight: bold;
+  text-align: center;
+}
+.third-block h2 {
+  line-height: 20px;
+  color: #2e2e2e;
+  font-weight: bold;
+  text-align: center;
+}
+.third-block p {
+  text-align: center;
+}
+.gallery {
+  margin: auto;
+  width: 1000px;
+  padding: 30px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: 900px;
+}
+li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  overflow: hidden;
+}
+.gallery ul li img {
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transform: scale(1.5);
+}
+.social {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+footer {
+  background-color: #e3e3e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.footer {
+  padding: 60px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer li a {
+  text-decoration: none;
+  color: #848484;
+  font-size: 18px;
+}
+.footer li a:hover {
+  color: #2dcb71;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
