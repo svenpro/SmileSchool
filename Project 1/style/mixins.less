@@ -1,0 +1,37 @@
+
+.flex{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.justify-content (@content) {
+  -webkit-box-pack: @content;
+  -ms-flex-pack: @content;
+  justify-content: @content;
+}
+
+.align-items (@align) {
+  -webkit-box-align: @align;
+  -ms-flex-align: @align;
+  align-items: @align;
+}
+
+.flex-direction (@direction) {
+  -webkit-box-orient: @direction;
+  -webkit-box-direction: @direction;
+  -ms-flex-direction: @direction;
+  flex-direction: @direction;
+}
+
+.main-content {
+  .flex;
+  .flex-direction(row);
+  .justify-content(center);
+}
+
+.border {
+  border: 1px solid white;
+}
