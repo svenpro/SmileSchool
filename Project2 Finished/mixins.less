@@ -1,0 +1,26 @@
+@background-icons: green;
+@grey-font: rgb(132,132,132);
+@font-color: rgb(34,34,34);
+@grey-background: rgb(227,227,227);
+@font: Arial, serif;
+@background: url(img/header/img1.png);
+
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-direction (@direction){
+  -webkit-box-orient: @direction;
+  -webkit-box-direction: @direction;
+  -ms-flex-direction: @direction;
+  flex-direction: @direction;
+}
+
+.justify-content (@content) {
+  -webkit-box-pack: @content;
+  -ms-flex-pack: @content;
+  justify-content: @content;
+}
