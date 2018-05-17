@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "less": "^3.0.4",
-    "grunt": "^1.0.2"
+    "less": "^3.0.4"
   },
   "devDependencies": {
+    "grunt": "^1.0.2",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-less": "^1.4.1",
     "grunt-contrib-nodeunit": "^1.1.0",
     "grunt-contrib-uglify": "3.3.0",
-    "grunt-svg-sprite": "^1.4.0"
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-svg-sprite": "^1.4.0",
+    "jit-grunt": "^0.10.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

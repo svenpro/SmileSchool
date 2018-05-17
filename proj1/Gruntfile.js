@@ -47,11 +47,23 @@ module.exports = function (grunt) {
           }
         }
       }
-    }
+    },
+
+    watch: {
+      styles: {
+        files: ['styles/**/*.less'], // which files to watch
+        tasks: ['less'],
+        options: {
+          nospawn: true
+        }
+      }
+    },
   });
+
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-svg-sprite');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['less']);
+  grunt.registerTask('default', ['less', 'watch']);
 };
