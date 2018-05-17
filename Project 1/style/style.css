@@ -164,7 +164,7 @@ body p {
   -ms-flex-pack: center;
   justify-content: center;
   background: url("../img/header/img.png") no-repeat;
-  background-size: auto;
+  background-size: 100%;
 }
 #features {
   display: -webkit-box;
