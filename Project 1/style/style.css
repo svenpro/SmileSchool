@@ -164,6 +164,7 @@ body p {
   -ms-flex-pack: center;
   justify-content: center;
   background: url("../img/header/img.png") no-repeat;
+  background-size: auto;
 }
 #features {
   display: -webkit-box;
@@ -431,6 +432,9 @@ body p {
 }
 /* MEDIA TABLET */
 @media only screen and (max-width: 768px) {
+  #main-header {
+    background-size: auto;
+  }
   .features-container {
     flex-wrap: wrap;
   }

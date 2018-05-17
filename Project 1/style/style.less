@@ -42,7 +42,7 @@ body {
 #main-header {
   .main-content;
   background: url("../img/header/img.png") no-repeat;
-  //background-size: 100%;
+  background-size: auto;
 }
 
 #features {
@@ -207,6 +207,10 @@ body {
 
 /* MEDIA TABLET */
 @media only screen and (max-width: 768px) {
+  #main-header{
+    background-size: auto;
+  }
+
   .features-container {
     flex-wrap: wrap;
   }
