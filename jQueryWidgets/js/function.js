@@ -1,8 +1,9 @@
 (function ($) {
     var accordion =  $('[data-role=accordion]');
 
-    accordion.accordion({
+    accordion.accordionExtend({
         active: 0,
+        headerColor: 'black',
         header: ".accordion-title",
         classes: {
             "ui-accordion-header": "accordion-title-olol",
@@ -11,14 +12,14 @@
     });
 
     $('.destroy').on('click', function () {
-        accordion.accordion( "destroy" );
+        accordion.accordionExtend( "destroy" );
     });
 
     $('.enable').on('click', function () {
-        accordion.accordion( "enable" );
+        accordion.accordionExtend( "enable" );
     });
 
     $('.disable').on('click', function () {
-        accordion.accordion( "disable" );
+        accordion.accordionExtend( "disable" );
     });
-})(jQuery)
+})(jQuery);
