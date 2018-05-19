@@ -32,11 +32,71 @@ body {
   }
 }
 
-#wrapper {
-  height: 100%;
-  width: 100%;
-  .flex;
-  .flex-direction(column);
+.ui-draggable {
+  .ui-dialog-titlebar {
+    cursor: move;
+    background-color: @button-color;
+    color: @background-color;
+
+  }
+}
+
+#dialog {
+  width: 600px;
+  background-color: #007fff;
+  .steps {
+    position: relative;
+    width: 5em;
+    height: 5em;
+    margin: 1em auto;
+    border: .2em solid mediumturquoise;
+    border-radius: 50%;
+    font-size: 1.2em;
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: .1em;
+      height: 2.1em;
+      left: 2.5em;
+      top: .4em;
+      background: mediumturquoise;
+      animation: timing 60s infinite steps(60);
+      transform-origin: 0 2.1em;
+    }
+  }
+  @keyframes timing {
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+  .typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
 }
 
 #main-header {
@@ -60,11 +120,6 @@ body {
   background-color: @background-color;
 }
 
-#main-footer {
-  .main-content;
-  background-color: @container-color;
-}
-
 .container {
   .flex;
   width: 80%;
@@ -74,14 +129,13 @@ body {
 .header-container{
   padding-top: 130px;
   .flex;
-  width: 70%;
-  .justify-content(space-between);
-
+  width: 90%;
+  .justify-content(space-around);
 }
 
 .hand {
   .flex;
-  width: 50%;
+  width: 40%;
   background: url("../img/header/hand.png") no-repeat;
   height: 500px;
 }
@@ -92,7 +146,8 @@ body {
 }
 
 .header-content {
-  width: 40%;
+  width: 50%;
+  padding-left: 100px;
   p {
     font-size: 1.3em;
     color: white;
@@ -181,34 +236,66 @@ body {
   }
 }
 
-.footer-container {
-  padding: 50px 0;
-  .container;
+.main-footer {
   .flex;
   .flex-direction(row);
-  .justify-content(space-between);
-  width: 50%;
-  .footer-content {
-    a {
-      .justify-content(space-between);
-      text-decoration: none;
-      color: @font-color;
-      font-size: 18px;
+  .align-items(center);
+  .justify-content(center);
+  padding: 60px 0;
+  background-color: @container-color;
 
-      &:hover {
+  ul {
+    .flex;
+    .justify-content(space-between);
+    li{
+      display: inline-block;
+      padding: 0 50px;
+
+      &:hover{
         color: @button-color;
-        cursor: pointer;
+        background-color: @container-color;
+        border: none;
+      }
+
+      a{
+        text-decoration: none;
+        color: @font-color;
+        background-color: @container-color;
+        border: none;
+
+        &:hover{
+          color: @button-color;
+          font-weight: 600;
+          background-color: @container-color;
+          border: none;
+        }
+
+        &:active {
+          background-color: @container-color;
+          border: none;
+        }
       }
     }
   }
 }
 
+.ui-menu.ui-widget-content
+{
+  border: none !important;
+  background-color: @container-color;
+}
+
+
 
 
 /* MEDIA TABLET */
-@media only screen and (max-width: 768px) {
-  #main-header{
+@media only screen and (max-width: 1024px) {
+  #main-header {
     background-size: auto;
+  }
+
+  .header-container {
+    width: 90%;
   }
 
   .features-container {
@@ -247,7 +334,7 @@ body {
 }
 
 /* MEDIA MOBILE */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container {
     flex-wrap: wrap;
   }
@@ -264,14 +351,18 @@ body {
     width: 100%;
   }
 
-  .footer-container {
-    .flex;
-    .flex-direction(column);
-    .justify-content(space-around);
-    .align-items(center);
-    .footer-content{
-      height:30px;
+  .main-footer {
+    ul {
+      .flex;
+      .flex-direction(column);
+      .align-items(center);
+      .justify-content(space-between);
     }
+
+    li {
+      margin-top: 20px;
+    }
+
   }
 
   .social {

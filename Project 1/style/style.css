@@ -101,7 +101,6 @@
   margin-left: -7px;
 }
 .info {
-  width: 887px;
   font-size: 18px;
   line-height: 30px;
   color: #848484;
@@ -137,18 +136,74 @@ body {
 body p {
   color: #818181;
 }
-#wrapper {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: column;
-  -webkit-box-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.ui-draggable .ui-dialog-titlebar {
+  cursor: move;
+  background-color: #2ECB71;
+  color: #FEFEFE;
+}
+#dialog {
+  width: 600px;
+  background-color: #007fff;
+  /* The typing effect */
+  /* The typewriter cursor effect */
+}
+#dialog .steps {
+  position: relative;
+  width: 5em;
+  height: 5em;
+  margin: 1em auto;
+  border: .2em solid mediumturquoise;
+  border-radius: 50%;
+  font-size: 1.2em;
+}
+#dialog .steps:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: .1em;
+  height: 2.1em;
+  left: 2.5em;
+  top: .4em;
+  background: mediumturquoise;
+  animation: timing 60s infinite steps(60);
+  transform-origin: 0 2.1em;
+}
+@keyframes timing {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#dialog .typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 #main-header {
   display: -webkit-box;
@@ -211,21 +266,6 @@ body p {
   justify-content: center;
   background-color: #FEFEFE;
 }
-#main-footer {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: row;
-  -webkit-box-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #E2E2E2;
-}
 .container {
   display: -webkit-box;
   display: -moz-box;
@@ -244,10 +284,10 @@ body p {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  width: 70%;
-  -webkit-box-pack: space-between;
-  -ms-flex-pack: space-between;
-  justify-content: space-between;
+  width: 90%;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
 }
 .hand {
   display: -webkit-box;
@@ -255,7 +295,7 @@ body p {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  width: 50%;
+  width: 40%;
   background: url("../img/header/hand.png") no-repeat;
   height: 500px;
 }
@@ -271,7 +311,8 @@ body p {
   flex-direction: row;
 }
 .header-content {
-  width: 40%;
+  width: 50%;
+  padding-left: 100px;
 }
 .header-content p {
   font-size: 1.3em;
@@ -401,9 +442,7 @@ body p {
   opacity: .5;
   cursor: pointer;
 }
-.footer-container {
-  padding: 50px 0;
-  width: 80%;
+.main-footer {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -413,27 +452,61 @@ body p {
   -webkit-box-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: space-between;
-  -ms-flex-pack: space-between;
-  justify-content: space-between;
-  width: 50%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 60px 0;
+  background-color: #E2E2E2;
 }
-.footer-container .footer-content a {
+.main-footer ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   -webkit-box-pack: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
+}
+.main-footer ul li {
+  display: inline-block;
+  padding: 0 50px;
+}
+.main-footer ul li:hover {
+  color: #2ECB71;
+  background-color: #E2E2E2;
+  border: none;
+}
+.main-footer ul li a {
   text-decoration: none;
   color: #818181;
-  font-size: 18px;
+  background-color: #E2E2E2;
+  border: none;
 }
-.footer-container .footer-content a:hover {
+.main-footer ul li a:hover {
   color: #2ECB71;
-  cursor: pointer;
+  font-weight: 600;
+  background-color: #E2E2E2;
+  border: none;
+}
+.main-footer ul li a:active {
+  background-color: #E2E2E2;
+  border: none;
+}
+.ui-menu.ui-widget-content {
+  border: none !important;
+  background-color: #E2E2E2;
 }
 /* MEDIA TABLET */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   #main-header {
     background-size: auto;
+  }
+  .header-container {
+    width: 90%;
   }
   .features-container {
     flex-wrap: wrap;
@@ -465,7 +538,7 @@ body p {
   }
 }
 /* MEDIA MOBILE */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container {
     flex-wrap: wrap;
   }
@@ -481,7 +554,7 @@ body p {
   .info-content {
     width: 100%;
   }
-  .footer-container {
+  .main-footer ul {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -491,15 +564,15 @@ body p {
     -webkit-box-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: space-around;
-    -ms-flex-pack: space-around;
-    justify-content: space-around;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
   }
-  .footer-container .footer-content {
-    height: 30px;
+  .main-footer li {
+    margin-top: 20px;
   }
   .social {
     -webkit-box-orient: column;
