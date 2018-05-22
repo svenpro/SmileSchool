@@ -1,9 +1,8 @@
 (function ($) {
     var accordion =  $('[data-role=accordion]');
 
-    accordion.accordionExtend({
+    accordion.accordion({
         active: 0,
-        headerColor: 'black',
         header: ".accordion-title",
         classes: {
             "ui-accordion-header": "accordion-title-olol",
