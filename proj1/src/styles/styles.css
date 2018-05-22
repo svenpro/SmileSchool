@@ -729,6 +729,11 @@ Footer ul li a:hover {
   border: none !important;
   background-color: #e3e3e3;
 }
+.ui-menu.ui-widget-content .ui-front {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
 .ui-dialog .ui-dialog-titlebar {
   display: -webkit-box;
   display: -webkit-flex;
