@@ -1,0 +1,52 @@
+@white: #ffffff;
+@light-green: #2ecc71;
+@black-l: #030303;
+@black: #000;
+@light-black: #222222;
+@light-grey: #848484;
+@border-grey:  #c8c8c8;
+@header-black: #2e2e2e;
+@bg-white: #e3e3e3;
+@icons-bg-grey: #c5c5c5;
+
+.flex{
+  display: -webkit-box;  
+  display: -webkit-flex; 
+  display: -ms-flexbox;  
+  display: flex;
+}
+
+.justify-content(@poz){
+  -webkit-justify-content: @poz;
+  -ms-flex-pack: @poz;
+  justify-content: @poz
+}
+
+.align-items(@poz){
+  -webkit-align-items: @poz; 
+  -ms-flex-align: @poz; 
+  align-items: @poz;
+}
+
+.flex-direction{
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.wrap{
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+.bg-image(@url, @repeat, @poz){
+  background-image: url(@url);
+  background-repeat: @repeat;
+  background-position: @poz;
+}
+
+.font(@name, @size, @weight, @line-height){
+  font-family: @name;
+  font-size: @size;
+  font-weight: @weight;
+  line-height: @line-height;
+}

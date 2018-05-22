@@ -1,0 +1,17 @@
+.screen-sm(@rules) {
+    @media only screen and (max-width: 767px){ @rules(); }
+}
+
+.screen-md(@rules) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) { @rules(); }
+}
+
+.screen-lg(@rules) {
+    @media only screen and (min-width: 1024px) { @rules(); }
+}
+
+.media(@rules-sm; @rules-md; @rules-lg){
+    .screen-sm(@rules-sm);
+    .screen-md(@rules-md);
+    .screen-lg(@rules-lg);
+}
