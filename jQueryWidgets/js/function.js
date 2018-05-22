@@ -1,9 +1,10 @@
 (function ($) {
     var accordion =  $('[data-role=accordion]');
 
-    accordion.accordion({
+    accordion.accordionExtend({
         active: 0,
         header: ".accordion-title",
+        titleColor: 'green',
         classes: {
             "ui-accordion-header": "accordion-title-olol",
             "ui-accordion-content": "accordion-content"
@@ -21,4 +22,8 @@
     $('.disable').on('click', function () {
         accordion.accordionExtend( "disable" );
     });
+
+    $('document').ready(function () {
+        accordion.newWidget();
+    })
 })(jQuery);
