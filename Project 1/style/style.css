@@ -595,4 +595,17 @@ body p {
     width: 30%;
   }
 }
+
+li.ui-menu-item {
+  position: relative;
+}
+
+.sub-menu.submenu-custom {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  left: 0 !important;
+  margin: 7px;
+  align-text: center;
+}
 /*# sourceMappingURL=style.css.map */
