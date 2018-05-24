@@ -17,20 +17,22 @@
 
                 $(".menu-extend").removeClass("sub-menu ui-menu ui-widget ui-widget-content ui-front menu-extend");
 
+                let subMenu = $("#sub-menu1");
+
                 $(".ui-menu-item-wrapper").hover(function(){
-                    $("#sub-menu1").css({
+                    subMenu.css({
                         "display": "flex",
                         "flex-direction": "column",
                         "position": "absolute",
                         "left": "440px",
                         "top": "-80px",
-                        "margin": "5px",
+                        "margin": "7px",
                         "align-text": "center"
                     });
                 },
                     function(){
-                    $("#sub-menu1").mouseout(function(){
-                        $("#sub-menu1").css("display","none");
+                    subMenu.mouseout(function(){
+                        subMenu.css("display","none");
                     });
                     toggle();
                 }
@@ -38,7 +40,7 @@
 
                 let toggle = function(){
                     if($(".ui-menu-item-wrapper").hasClass('ui-state-active')){
-                        $("#sub-menu1").css("display","none");
+                        subMenu.css("display","none");
                     }
                 }
 
