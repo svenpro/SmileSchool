@@ -1,4 +1,4 @@
-(function(){
+(function($){
     $( "#dialog" ).dialog({
         show: {
             effect: "blind",
@@ -11,13 +11,20 @@
         width: 600
     });
 
-    var position = {my: "left top", at: "left bottom+8"};
+    let position = {my: "center", at: "center"};
 
-    $( ".menu" ).menu({
-        position: position,
-        blur: function() {
-            $(this).menu("option", "position", position);
-        },
+    const menu = $(".menu");
+
+    menu.menu({
+        // position: position,
     });
 
-})();
+
+
+    $('document').ready(function () {
+        menu.menuExtend({
+            active: true,
+        });
+    })
+
+})(jQuery);
