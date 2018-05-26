@@ -3,7 +3,7 @@
     $.widget( "ui.menuExtend", $.ui.menu, {
 
         options: {
-            active: true,
+            active: false,
         },
 
         _create: function () {
@@ -17,7 +17,7 @@
 
                 $(".menu-extend").removeClass("sub-menu ui-menu ui-widget ui-widget-content ui-front menu-extend");
 
-                let subMenu = $("#sub-menu1");
+                const subMenu = $("#sub-menu1");
 
                 $(".ui-menu-item-wrapper").hover(function(){
                     subMenu.css({

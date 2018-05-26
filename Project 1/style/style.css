@@ -492,13 +492,13 @@ body p {
   background-color: #E2E2E2;
 }
 .ui-state-active {
-  border: none!important;
+  border: none !important;
   background-color: #E2E2E2 !important;
   color: #2ECB71 !important;
 }
 .sub-menu .ui-menu .ui-widget .ui-widget-content .ui-front {
   display: flex;
-  left: 440px!important;
+  left: 440px !important;
   top: -135px !important;
   flex-direction: column;
 }
