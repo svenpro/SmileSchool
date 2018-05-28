@@ -260,10 +260,10 @@ body {
         li {
             display: inline-block;
             padding: 0 50px;
+            width: 100px;
 
             &:hover {
                 color: @button-color;
-                //background-color: @container-color;
                 border: none;
             }
 
@@ -275,7 +275,6 @@ body {
 
                 &:hover {
                     color: @button-color;
-                    font-weight: 600;
                     background-color: @container-color;
                     border: none;
                 }
@@ -289,6 +288,82 @@ body {
     }
 }
 
+.footer-mobile {
+    background-color: @container-color;
+    display: none;
+    text-align: center;
+
+    nav.mobile-menu ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        max-height: 0;
+        transition: transform 500ms ease-in-out;
+        overflow: hidden;
+        float: left;
+
+        li {
+            margin: 0;
+            padding: 0;
+            float: left;
+            width: 100%;
+            list-style: none;
+            position: relative;
+            transition: all 500ms;
+
+            a {
+                display: inline-block;
+                padding: 2.17rem 5% 2.17rem 5%;
+                float: left;
+                min-width: 12rem;
+                width: 90%;
+                text-align: center;
+                font-size: 2rem;
+                color: @font-color;
+                text-decoration: none;
+                background: @container-color;
+                font-weight: 300;
+                transition: all 500ms;
+
+                &:hover {
+                    color: @button-color;
+                }
+            }
+        }
+    }
+
+    nav.mobile-menu ul li ul {
+        width: 100%;
+        transition: all 500ms;
+        max-height: 0;
+        overflow: hidden;
+        float: left;
+    }
+
+    nav.mobile-menu ul li ul li {
+        display: block;
+        float: left;
+        background: @background-color;
+        transition: all 500ms;
+    }
+
+    nav.mobile-menu ul li ul li a {
+        background: @background-color;
+    }
+
+    nav.mobile-menu ul li:hover > ul {
+        max-height: 500px;
+    }
+}
+
+.arrow {
+    width: 2rem;
+    position: relative;
+    top: 3px;
+    transform: rotate(0deg);
+    transition: all .35s;
+}
+
 .ui-menu.ui-widget-content {
     border: none !important;
     background-color: @container-color;
@@ -300,16 +375,86 @@ body {
     color: @button-color !important;
 }
 
-.sub-menu .ui-menu .ui-widget .ui-widget-content .ui-front {
-    display: flex;
-    left: 440px !important;
-    top: -135px !important;
-    flex-direction: column;
+li.ui-menu-item {
+    position: relative;
 }
+
+.sub-menu.submenu-custom {
+    background-color: @container-color;
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    left: 0 !important;
+    margin: 7px;
+    text-align: center;
+    visibility: visible;
+
+    a {
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100px;
+    }
+}
+
+//.dropdownmenu ul, .dropdownmenu li {
+//    margin: 0;
+//    padding: 0;
+//}
+//.dropdownmenu ul {
+//    background: gray;
+//    list-style: none;
+//    width: 100%;
+//}
+//.dropdownmenu li {
+//    float: left;
+//    position: relative;
+//    width:auto;
+//}
+//
+//.dropdownmenu a {
+//    background: #30A6E6;
+//    color: #FFFFFF;
+//    display: block;
+//    font: bold 12px/20px sans-serif;
+//    padding: 10px 25px;
+//    text-align: center;
+//    text-decoration: none;
+//    -webkit-transition: all .25s ease;
+//    -moz-transition: all .25s ease;
+//    -ms-transition: all .25s ease;
+//    -o-transition: all .25s ease;
+//    transition: all .25s ease;
+//}
+//.dropdownmenu li:hover a {
+//    background: #000000;
+//}
+//#submenu {
+//    left: 0;
+//    opacity: 0;
+//    position: absolute;
+//    top: 35px;
+//    visibility: hidden;
+//    z-index: 1;
+//}
+//li:hover ul#submenu {
+//    opacity: 1;
+//    top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+//    visibility: visible;
+//}
+//#submenu li {
+//    float: none;
+//    width: 100%;
+//}
+//#submenu a:hover {
+//    background: #DF4B05;
+//}
+//#submenu a {
+//    background-color:#000000;
+//}
 
 /* MEDIA TABLET */
 @media only screen and (max-width: 1024px) {
-    #main-header {
+    .main-header {
         background-size: auto;
     }
 
@@ -349,6 +494,14 @@ body {
                 display: block;
             }
         }
+    }
+
+    .main-footer {
+        display: none;
+    }
+
+    .footer-mobile {
+        display: block;
     }
 }
 

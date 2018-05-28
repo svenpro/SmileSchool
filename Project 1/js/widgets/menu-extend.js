@@ -3,62 +3,44 @@
     $.widget( "ui.menuExtend", $.ui.menu, {
 
         options: {
-            active: false,
+            active: false
         },
 
         _create: function () {
             this._super();
 
+            var subMenu = $(".sub-menu");
+
+            subMenu.removeClass('ui-menu ui-widget ui-widget-content ui-front');
+
+            // subMenu.css.removeAttr('style');
+
+            this._desktopMenu();
+            // TODO Create toggle between mobile and desktop mods!
+        },
+
+        _desktopMenu: function() {
             if (this.options.active) {
-                console.log('its menu extend');
 
 
-                $( ".sub-menu" ).addClass("menu-extend");
+                $(".ui-menu-item-wrapper").on('mouseenter', function(){
+                    var submenu =  $(this).next('.sub-menu'),
+                        elementHeight = 20,
+                        submenuHeight = submenu.height() + elementHeight;
 
-                $(".menu-extend").removeClass("sub-menu ui-menu ui-widget ui-widget-content ui-front menu-extend");
-
-                const subMenu = $("#sub-menu1");
-
-                $(".ui-menu-item-wrapper").hover(function(){
-                    subMenu.css({
-                        "display": "flex",
-                        "flex-direction": "column",
-                        "position": "absolute",
-                        "left": "440px",
-                        "top": "-80px",
-                        "margin": "7px",
-                        "align-text": "center"
-                    });
-                },
-                    function(){
-                    subMenu.mouseout(function(){
-                        subMenu.css("display","none");
-                    });
-                    toggle();
-                }
-                );
-
-                let toggle = function(){
-                    if($(".ui-menu-item-wrapper").hasClass('ui-state-active')){
-                        subMenu.css("display","none");
-                    }
-                }
-
-                $("#sub-menu1 li").css({
-                    "margin": "2px",
-                    "width": "50px",
+                    submenu.addClass('submenu-custom');
+                    submenu.css('top', '-' +  submenuHeight + 'px');
                 });
 
-                // $(".menu-extend").hover.css({
-                //     "display": "flex",
-                //     "flex-direction": "column",
-                //     "left": "440px",
-                //     "top": "-135px",
-                //     "align-items": "center",
-                // });
+                $(".ui-menu-item-wrapper").on('mouseleave', function(){
+                    $(".sub-menu").css("display","none");
+                });
             }
         },
 
+        _mobileMenu: function() {
+            $('.menu').addClass('toggle-menu');
+        }
 
     });
 
