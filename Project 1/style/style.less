@@ -248,7 +248,7 @@ body {
 
 .main-footer {
     .flex;
-    .flex-direction(column);
+    .flex-direction(row);
     .align-items(center);
     .justify-content(center);
     padding: 60px 0;
@@ -257,10 +257,10 @@ body {
     ul {
         .flex;
         .justify-content(space-between);
+        width: 80%;
         li {
             display: inline-block;
-            padding: 0 50px;
-            width: 100px;
+            width: 100%;
 
             &:hover {
                 color: @button-color;
@@ -379,21 +379,31 @@ li.ui-menu-item {
     position: relative;
 }
 
-.sub-menu.submenu-custom {
-    background-color: @container-color;
+.ui-menu-item-wrapper.ui-state-active ul {
     display: flex !important;
+}
+
+.sub-menu.ui-menu.ui-widget {
+    background-color: @container-color;
+    display: none;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     left: 0 !important;
+    top: -100% !important;
     margin: 7px;
     text-align: center;
     visibility: visible;
 
-    a {
-        padding: 0 !important;
-        margin: 0 !important;
-        width: 100px;
+    li {
+        background-color: @container-color;
+
+        a {
+            padding: 0 !important;
+            margin: 0 !important;
+            width: 100px;
+        }
     }
+
 }
 
 //.dropdownmenu ul, .dropdownmenu li {
