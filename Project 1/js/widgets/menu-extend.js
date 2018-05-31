@@ -26,43 +26,40 @@
                 };
             }
 
-            var $window = $(window);
-            var windowsize = $window.width();
 
-            $(document).ready(function() {
-                // Optimalisation: Store the references outside the event handler:
-                var windowsize = $(window).width();
-                function checkWidth(windowsize) {
-                    var windowsize = $window.width();
-                    if (windowsize >= 1024) {
-                        self._desktopMenu();
+            var windowsize = $(window).width();
+            function checkWidth(windowsize) {
+                if (windowsize >= self.options.screenPoint) {
+                    self._desktopMenu();
+                } else if (windowsize < self.options.screenPoint - 1){
+                    self._mobileMenu();
 
-
-                    } else if (windowsize < 1023){
-                        self._mobileMenu();
-
-                    }
                 }
-                // Execute on load
-                checkWidth(windowsize);
-                // Bind event listener
-                $(window).on('resize', debounce(function () {
-                    checkWidth($window.width());
-                }, 250));
-            });
+            }
+            // Execute on load
+            checkWidth(windowsize);
+            // Bind event listener
+            $(window).on('resize', debounce(function () {
+                checkWidth($(window).width());
+            }, 250));
         },
 
         _desktopMenu: function() {
             console.log('desktop');
             $('footer').removeClass();
             $('footer').addClass('main-footer');
-            $( ".menu" ).menu( "disable" );
+            $( ".menu" ).menu( "destroy" );
+            $( ".menu" ).menu();
             $( ".menu" ).menu( "enable" );
 
         },
 
         _mobileMenu: function() {
             console.log('mobile');
+
+            $( ".menu" ).menu( "destroy" );
+            $( ".menu" ).menu();
+            $( ".menu" ).menu( "enable" );
 
             $('footer').removeClass().addClass('footer-mobile');
 
