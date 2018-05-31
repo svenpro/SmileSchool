@@ -254,6 +254,16 @@ body {
     .justify-content(center);
     background-color: @container-color;
 
+
+
+    .burger-menu {
+        display: none;
+    }
+
+    .btn-close {
+        display: none;
+    }
+
     ul {
         .flex;
         .justify-content(space-between);
@@ -285,7 +295,34 @@ body {
                 }
             }
         }
+
+        .sub-menu.ui-menu.ui-widget {
+            background-color: @container-color;
+            display: none;
+            flex-direction: column;
+            position: relative;
+            left: 0 !important;
+            top: -100% !important;
+            margin: 7px;
+            text-align: center;
+            visibility: visible;
+
+            li {
+                background-color: @container-color;
+
+                a {
+                    padding: 0 !important;
+                    margin: 0 !important;
+                    width: 100px;
+                }
+            }
+
+        }
     }
+}
+
+.ui-menu-icon {
+    z-index: 1231;
 }
 
 .footer-mobile {
@@ -295,6 +332,7 @@ body {
     .align-items(center);
     .justify-content(center);
     background-color: @container-color;
+    transition:0.5s;
 
     .btn-close {
         position: fixed;
@@ -304,6 +342,13 @@ body {
         margin-left: 50px;
         text-decoration: none;
         z-index: 234;
+        display: none;
+
+        &:hover {
+            cursor: pointer;
+            color: @button-color;
+        }
+
     }
 
     .menu {
@@ -316,10 +361,37 @@ body {
         left:0;
         margin: 0;
         max-height: 0;
-        transition: transform 500ms ease-in-out;
-        //overflow: hidden;
+        transition: transform 500s ease-in-out;
+        display: none;
         opacity:0.9;
         padding-top:60px;
+        padding-bottom: 100%;
+
+        .sub-menu {
+            //.flex-direction(column);
+            left: 0 !important;
+            position: relative;
+            .ui-menu.ui-widget.ui-widget-content.ui-front {
+                display: none;
+            }
+
+            li {
+                background: @background-color !important;
+                ul {
+                    width: 100%;
+                    transition: all 500ms;
+                    max-height: 0;
+                    overflow: hidden;
+                    text-align: left;
+
+                    li {
+                        display: block;
+                        float: left;
+                    }
+                }
+            }
+
+        }
 
         li {
             margin: 0;
@@ -334,7 +406,7 @@ body {
 
             a {
                 display: inline-block;
-                padding: 1.17rem 5% 1.17rem 15%;
+                padding: 1.17rem 15% 1.17rem 15%;
                 float: left;
                 min-width: 12rem;
                 width: 70%;
@@ -343,7 +415,7 @@ body {
                 color: @font-color;
                 text-decoration: none;
                 font-weight: 300;
-                transition: all 500s;
+                transition: all 500ms;
                 z-index: 23;
 
                 .ui-state-active {
@@ -356,30 +428,9 @@ body {
             }
         }
     }
-
-    nav.mobile-menu ul li ul {
-        width: 100%;
-        transition: all 500ms;
-        max-height: 0;
-        overflow: hidden;
-        float: left;
-    }
-
-    nav.mobile-menu ul li ul li {
-        display: block;
-        float: left;
-        background: @background-color;
-        transition: all 500ms;
-    }
-
-    nav.mobile-menu ul li ul li a {
-        background: @background-color;
-    }
-
-    nav.mobile-menu ul li:hover > ul {
-        max-height: 500px;
-    }
 }
+
+
 
 .arrow {
     width: 2rem;
@@ -394,7 +445,7 @@ body {
     background-color: @container-color;
 }
 
-.ui-state-active {
+.ui-menu-item-wrapper.ui-state-active {
     border: none !important;
     background-color: @container-color !important;
     color: @button-color !important;
@@ -408,28 +459,7 @@ body {
 //    display: flex !important;
 //}
 
-.sub-menu.ui-menu.ui-widget {
-    background-color: @container-color;
-    display: none;
-    flex-direction: column;
-    position: relative;
-    left: 0 !important;
-    top: -100% !important;
-    margin: 7px;
-    text-align: center;
-    visibility: visible;
 
-    li {
-        background-color: @container-color;
-
-        a {
-            padding: 0 !important;
-            margin: 0 !important;
-            width: 100px;
-        }
-    }
-
-}
 
 /* MEDIA TABLET */
 @media only screen and (max-width: 1024px) {
