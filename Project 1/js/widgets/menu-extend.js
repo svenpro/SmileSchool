@@ -16,7 +16,6 @@
             // subMenu.css.removeAttr('style');
 
             this._desktopMenu();
-            // TODO Create toggle between mobile and desktop mods!
         },
 
         _desktopMenu: function() {

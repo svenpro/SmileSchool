@@ -24,6 +24,8 @@
     $('document').ready(function () {
         menu.menuExtend({
             active: true,
+            menus: "nav",
+            items: ".custom-item"
         });
     });
 
