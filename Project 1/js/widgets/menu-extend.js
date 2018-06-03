@@ -8,6 +8,8 @@
         },
 
         _create: function () {
+            this._super();
+
             var self = this;
 
             /// Function DEBOUNCE
@@ -48,7 +50,7 @@
             console.log('desktop');
             $('footer').removeClass();
             $('footer').addClass('main-footer');
-            $( ".menu" ).menu( "destroy" );
+            // $( ".menu" ).menu( "disable" );
             $( ".menu" ).menu();
             $( ".menu" ).menu( "enable" );
 
@@ -57,7 +59,7 @@
         _mobileMenu: function() {
             console.log('mobile');
 
-            $( ".menu" ).menu( "destroy" );
+            // $( ".menu" ).menu( "disable" );
             $( ".menu" ).menu();
             $( ".menu" ).menu( "enable" );
 

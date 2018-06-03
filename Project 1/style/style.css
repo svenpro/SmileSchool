@@ -394,39 +394,10 @@ body p {
   flex-direction: row;
 }
 .gallery {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: center;
-  -webkit-box-direction: center;
-  -ms-flex-direction: center;
-  flex-direction: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-.gallery ul {
   width: 80%;
 }
-.gallery li {
-  cursor: pointer;
-  display: inline-block;
-  list-style-type: none;
-  width: 50px;
-  height: 50px;
-}
-.gallery li:hover {
-  background-color: green;
-  cursor: pointer;
-}
-.gallery li img {
-  width: 50px;
-  height: 50px;
-}
-.gallery li img:hover {
-  opacity: 0.4;
+.gallery div {
+  display: block;
 }
 .main-footer {
   padding: 2.17rem 5% 3.17rem 5%;
