@@ -17,6 +17,7 @@
 
     menu.menu({
         // position: position,
+        delegate: "footer"
     });
 
 
@@ -29,19 +30,8 @@
         });
     });
 
-    var toggleMenu = $('.toggle-menu');
 
-
-    $('.burger-menu').bind('click', function() {
-
-        if($(this).attr('data-click-state') == 1) {
-            $(this).attr('data-click-state', 0)
-            toggleMenu.css('overflow', 'hidden');
-        } else {
-            $(this).attr('data-click-state', 1)
-            toggleMenu.css('overflow', 'visible');
-        }
-    });
 
 
 })(jQuery);
+
