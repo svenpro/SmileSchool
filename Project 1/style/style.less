@@ -1,5 +1,6 @@
 @import "mixins";
 @import "main";
+@import "slideshow";
 //@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 // Variables
@@ -221,7 +222,7 @@ body {
     //.flex;
     //.flex-direction(center);
     //.justify-content(center);
-    width: 80%;
+    width: 100%;
 
     div {
         display: block;
@@ -489,23 +490,19 @@ body {
         width: 100%;
     }
 
-    .social-content.images {
-        height: 400px;
-    }
-
-    .gallery {
-        height: 50px;
-        flex-wrap: wrap;
-        div {
-            width: 15%;
-            background-color: @background-color;
-            img {
-                height: 50px;
-                width: 70px;
-                display: block;
-            }
-        }
-    }
+    //.gallery {
+    //    height: 50px;
+    //    flex-wrap: wrap;
+    //    div {
+    //        width: 15%;
+    //        background-color: @background-color;
+    //        img {
+    //            height: 50px;
+    //            width: 70px;
+    //            display: block;
+    //        }
+    //    }
+    //}
 
 }
 
@@ -547,16 +544,6 @@ body {
 
     .header-container {
         .flex-direction(column);
-    }
-
-    .social-content.images {
-        height: 600px;
-    }
-
-    .gallery {
-        div {
-            width: 30%;
-        }
     }
 
 }
