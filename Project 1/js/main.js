@@ -20,9 +20,12 @@
         delegate: "footer"
     });
 
-    $('#slider').powerSlide();
+    $('.slider').powerSlide();
+
+
 
     $('document').ready(function () {
+
         menu.menuExtend({
             active: true,
             menus: "nav",
