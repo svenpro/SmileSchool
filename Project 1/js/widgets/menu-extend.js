@@ -71,27 +71,18 @@
 
             var toggleMenu = $('.menu');
 
-            $('.burger-menu').bind('click', function() {
+            $('.burger-menu').on('click', function() {
 
-                if($(this).attr('data-click-state') == 1) {
-                    $(this).attr('data-click-state', 0);
-                    toggleMenu.css('display', 'none');
-                    $('.btn-close').css('display', 'none');
-                    $('body').css('margin-left', '');
-                } else {
-                    $(this).attr('data-click-state', 1);
-                    toggleMenu.css('display', 'block');
-                    $('.btn-close').css('display', 'block');
-                    $('body').css('margin-left', '40%');
-                }
+                $('.menu').toggleClass('open');
+                $('.btn-close').toggleClass('open');
+                $('body').toggleClass('open');
             });
 
 
             $('.btn-close').on('click', function(){
-                $('.menu').css('display', 'none');
-                $(this).css('display', 'none');
-                $('.burger-menu').attr('data-click-state', 0);
-                $('body').css('margin-left', '');
+                $('.menu').removeClass('open');
+                $('.btn-close').removeClass('open');
+                $('body').removeClass('open');
             });
 
             $('.ui-menu-icon').on('click', function(){

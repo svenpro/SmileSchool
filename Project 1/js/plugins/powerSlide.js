@@ -8,10 +8,8 @@
         }, options );
 
 
-        var paused = false;
-
         setInterval(function() {
-            if (paused === false) {
+            if (settings.auto === true) {
                 $('.slideshow > div:first')
                     .fadeOut(1000)
                     .next()
