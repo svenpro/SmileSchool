@@ -11,9 +11,9 @@
     display: none;
 }
 
-@media (max-width: 768px) {
-    .slideshow img {
-        height: 124.5%;
-    }
-}
+/*@media (max-width: 768px) {*/
+    /*.slideshow img {*/
+        /*height: 124.5%;*/
+    /*}*/
+/*}*/
 /*# sourceMappingURL=slideshow.css.map */

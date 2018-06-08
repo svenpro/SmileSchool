@@ -138,18 +138,18 @@ body.open {
 }
 
 .header-container {
-    padding-top: 130px;
+    padding-top: 90px;
     .flex;
     width: 90%;
     .justify-content(space-around);
     z-index: 3;
+    height: 600px;
 }
 
 .hand {
     .flex;
     width: 40%;
     background: url("../img/header/hand.png") no-repeat;
-    height: 500px;
     z-index: 2;
 }
 
@@ -562,6 +562,10 @@ body.open {
 
     .header-container {
         .flex-direction(column);
+    }
+
+    .hand {
+        display: none;
     }
 
 }
