@@ -9,91 +9,63 @@ define(["jquery"], function($) {
         }, options );
 
 
-        setInterval(function() {
+        // var interval = setInterval(function() {
+        //     if (settings.auto === true) {
+        //         $('.slideshow > div:first')
+        //             .fadeOut(1000)
+        //             .next()
+        //             .fadeIn(1000)
+        //             .end()
+        //             .appendTo('.slideshow');
+        //     };
+        // },  5000);
+
+        var interval;
+
+        var nextSlide = function () {
+            var next = $(".slides .active").removeClass("active").next(".slide");
+            if (!next.length) {
+                next = $(".slides .slide:first");
+            }
+            next.addClass("active");
+        }
+
+        function pauseSlider() {
+            clearInterval(interval);
+        }
+
+        function play() {
             if (settings.auto === true) {
-                $('.slideshow > div:first')
-                    .fadeOut(1000)
-                    .next()
-                    .fadeIn(1000)
-                    .end()
-                    .appendTo('.slideshow');
-            };
-        },  5000);
+                interval = setInterval(function(){
+                    nextSlide();
+                }, 4000);
+            }
+        }
+        play();
 
-        //settings for slider
-        // var width = 720;
-        // var animationSpeed = 1000;
-        // var pause = 3000;
-        // var currentSlide = 1;
-        //
-        // var $slider = $('.slideshow');
-        // var $slideContainer = $('.slides', $slider);
-        // var $slides = $('.slide', $slider);
-        //
-        // var interval;
+        $('.next').on('click', function() {
+            pauseSlider();
+            nextSlide();
+        });
 
-        // this.powerSlide = function () {
-        //     interval = setInterval(function() {
-        //         $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
-        //             if (++currentSlide === $slides.length) {
-        //                 currentSlide = 1;
-        //                 $slideContainer.css('margin-left', 0);
-        //             }
-        //         });
-        //     }, pause);
-        //
-        // };
+        $('.prev').on('click', function() {
+            pauseSlider();
 
-        //this.powerSlide();
+            var prev = $(".slides .active").removeClass("active").prev(".slide");
+            if (!prev.length) {
+                prev = $(".slides .slide:last");
+            }
+            prev.addClass("active");
+        });
+
+
+
+        $('.next').on('mouseleave', play);
+        $('.prev').on('mouseleave', play);
+
+        // $('.next').on('mouseenter', pauseSlider);
+        // $('.prev').on('mouseenter', pauseSlider);
+
     };
 
 });
-
-// (function($){
-//     $.fn.powerSlide = function(options) {
-//
-//         'use strict';
-//         var settings = $.extend({
-//             auto: true,
-//             infinite: true
-//         }, options );
-//
-//
-//         setInterval(function() {
-//             if (settings.auto === true) {
-//                 $('.slideshow > div:first')
-//                     .fadeOut(1000)
-//                     .next()
-//                     .fadeIn(1000)
-//                     .end()
-//                     .appendTo('.slideshow');
-//             };
-//         },  5000);
-//
-//         //settings for slider
-//         // var width = 720;
-//         // var animationSpeed = 1000;
-//         // var pause = 3000;
-//         // var currentSlide = 1;
-//         //
-//         // var $slider = $('.slideshow');
-//         // var $slideContainer = $('.slides', $slider);
-//         // var $slides = $('.slide', $slider);
-//         //
-//         // var interval;
-//
-//         // this.powerSlide = function () {
-//         //     interval = setInterval(function() {
-//         //         $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
-//         //             if (++currentSlide === $slides.length) {
-//         //                 currentSlide = 1;
-//         //                 $slideContainer.css('margin-left', 0);
-//         //             }
-//         //         });
-//         //     }, pause);
-//         //
-//         // };
-//
-//         //this.powerSlide();
-//     };
-// })(jQuery);

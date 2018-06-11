@@ -47,74 +47,16 @@ body.open {
     }
 }
 
-#dialog {
-    width: 600px;
-    background-color: #007fff;
-    .steps {
-        position: relative;
-        width: 5em;
-        height: 5em;
-        margin: 1em auto;
-        border: .2em solid mediumturquoise;
-        border-radius: 50%;
-        font-size: 1.2em;
-        &:before {
-            content: "";
-            display: inline-block;
-            position: absolute;
-            width: .1em;
-            height: 2.1em;
-            left: 2.5em;
-            top: .4em;
-            background: mediumturquoise;
-            animation: timing 60s infinite steps(60);
-            transform-origin: 0 2.1em;
-        }
-    }
-    @keyframes timing {
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-
-    .typewriter h1 {
-        color: #fff;
-        font-family: monospace;
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid orange; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .15em; /* Adjust as needed */
-        animation: typing 3.5s steps(30, end),
-        blink-caret .5s step-end infinite;
-    }
-
-    /* The typing effect */
-    @keyframes typing {
-        from {
-            width: 0
-        }
-        to {
-            width: 100%
-        }
-    }
-
-    /* The typewriter cursor effect */
-    @keyframes blink-caret {
-        from, to {
-            border-color: transparent
-        }
-        50% {
-            border-color: orange
-        }
-    }
-}
-
 .main-header {
     .main-content;
     //background: url("../img/header/img.png") no-repeat;
-    background-size: 100%;
+    //background-size: 100%;
+    height: 550px;
 }
+
+//.slideshow .slides .slide.active {
+//    opacity: 1;
+//}
 
 .features {
     .main-content;
@@ -143,7 +85,7 @@ body.open {
     width: 90%;
     .justify-content(space-around);
     z-index: 3;
-    height: 600px;
+    height: 100%;
 }
 
 .hand {
