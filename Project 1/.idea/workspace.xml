@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="958ade69-10cb-4cdb-a0ab-7fcd0af648fd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/plugins/power-slide.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/plugins/power-slide.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/widgets/menu-extend.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/widgets/menu-extend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.less" afterDir="false" />
-    </list>
+    <list default="true" id="958ade69-10cb-4cdb-a0ab-7fcd0af648fd" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +27,8 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="464" column="25" lean-forward="true" selection-start-line="464" selection-start-column="25" selection-end-line="464" selection-end-column="25" />
+            <state relative-caret-position="493">
+              <caret line="452" lean-forward="true" selection-start-line="452" selection-end-line="452" />
             </state>
           </provider>
         </entry>
@@ -211,7 +204,7 @@
       <workItem from="1528092464937" duration="8279000" />
       <workItem from="1528175854552" duration="2769000" />
       <workItem from="1528272004871" duration="9083000" />
-      <workItem from="1528693768543" duration="21387000" />
+      <workItem from="1528693768543" duration="22072000" />
     </task>
     <task id="LOCAL-00001" summary="debounce">
       <created>1527671058325</created>
@@ -283,15 +276,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528784247113</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="homework-8.4">
+      <created>1528785179478</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1528785179478</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76648000" />
+    <option name="totallyTimeSpent" value="77333000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1934" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27214515" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -331,7 +330,8 @@
     <MESSAGE value="homework-8.1" />
     <MESSAGE value="homework-8.2" />
     <MESSAGE value="homework-8.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework-8.3" />
+    <MESSAGE value="homework-8.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework-8.4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -653,8 +653,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="464" column="25" lean-forward="true" selection-start-line="464" selection-start-column="25" selection-end-line="464" selection-end-column="25" />
+        <state relative-caret-position="493">
+          <caret line="452" lean-forward="true" selection-start-line="452" selection-end-line="452" />
         </state>
       </provider>
     </entry>
