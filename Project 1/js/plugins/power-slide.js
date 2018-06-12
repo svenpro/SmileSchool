@@ -8,31 +8,31 @@ define(["jquery"], function($) {
             infinite: true
         }, options );
 
-
-        // var interval = setInterval(function() {
-        //     if (settings.auto === true) {
-        //         $('.slideshow > div:first')
-        //             .fadeOut(1000)
-        //             .next()
-        //             .fadeIn(1000)
-        //             .end()
-        //             .appendTo('.slideshow');
-        //     };
-        // },  5000);
-
         var interval;
 
         var nextSlide = function () {
-            var next = $(".slides .active").removeClass("active").next(".slide");
-            if (!next.length) {
-                next = $(".slides .slide:first");
+            var next = $(".slides .active").next(".slide");
+            if(settings.infinite) {
+                next = $(".slides .active").removeClass("active").next(".slide");
+                if (!next.length) {
+                    next = $(".slides .slide:first");
+                }
+                next.addClass("active");
+            } else {
+                if (next.is(':last-child')) {
+                    console.log("last");
+                    $(".slides .slide:last").addClass("active");
+                } else {
+                    next.removeClass("active");
+                    if (!next.length) {
+                        next = $(".slides .slide:first");
+                    }
+                    next.addClass("active");
+                }
             }
-            next.addClass("active");
-        }
+        };
 
-        function pauseSlider() {
-            clearInterval(interval);
-        }
+
 
         function play() {
             if (settings.auto === true) {
@@ -40,8 +40,14 @@ define(["jquery"], function($) {
                     nextSlide();
                 }, 4000);
             }
+            console.log('play');
         }
         play();
+
+        function pauseSlider() {
+            window.clearInterval(interval);
+            console.log('pause');
+        }
 
         $('.next').on('click', function() {
             pauseSlider();
@@ -63,8 +69,8 @@ define(["jquery"], function($) {
         $('.next').on('mouseleave', play);
         $('.prev').on('mouseleave', play);
 
-        // $('.next').on('mouseenter', pauseSlider);
-        // $('.prev').on('mouseenter', pauseSlider);
+        $('.next').on('mouseenter', pauseSlider);
+        $('.prev').on('mouseenter', pauseSlider);
 
     };
 
