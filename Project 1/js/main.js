@@ -14,7 +14,10 @@ define([
     //     delegate: "footer"
     // });
 
-    $('.slider').powerSlide();
+    $('.slideshow').powerSlide({
+        'auto': true,
+        'infinity': true
+    });
 
     $('document').ready(function () {
 
