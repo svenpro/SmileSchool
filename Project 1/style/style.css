@@ -629,6 +629,7 @@ body.open {
 }
 .gallery .slick-prev:before {
   box-shadow: inset 20px 0px 20px 0px #e6e6e6;
+  left: 25px;
 }
 .gallery .slick-next:before {
   box-shadow: inset -20px 0px 20px 0px #e6e6e6;

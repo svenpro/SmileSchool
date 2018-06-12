@@ -47,9 +47,6 @@
   font-size: 20px;
   line-height: 1;
   opacity: 0.75;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-shadow: inset 200px 1px 130px -66px rgba(0,0,0,0.9);
   /* Icons */
 }
 @font-face {
@@ -61,6 +58,7 @@
 }
 .slick-prev {
   left: -25px;
+  z-index: 34;
 }
 [dir="rtl"] .slick-prev {
   left: auto;
