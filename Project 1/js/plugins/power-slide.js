@@ -5,7 +5,7 @@ define(["jquery"], function($) {
         'use strict';
         var settings = $.extend({
             auto: false,
-            infinite: true
+            infinite: false
         }, options );
 
         var interval;

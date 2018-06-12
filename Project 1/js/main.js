@@ -15,9 +15,10 @@ define([
     // });
 
     $('.slideshow').powerSlide({
-        'auto': true,
-        'infinity': true
+        auto: false,
+        infinite: true
     });
+
 
     $('document').ready(function () {
 

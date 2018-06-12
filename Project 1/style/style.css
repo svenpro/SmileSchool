@@ -116,7 +116,7 @@
   position: absolute;
   width: 100%;
   min-height: 450px;
-  height: 75%;
+  height: 550px;
   left: 0;
   top: 8px;
   overflow: hidden;
@@ -126,6 +126,9 @@
   -webkit-transition: opacity 1s ease-in-out;
   opacity: 0;
   background-size: 100%;
+}
+.slideshow .slides .slide img {
+  width: 100%;
 }
 .slideshow .slides .slide.active {
   opacity: 1;
