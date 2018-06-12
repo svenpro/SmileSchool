@@ -86,6 +86,7 @@ define(["jquery", "jqueryUI"], function($) {
             });
 
             $('.ui-menu-icon').on('click', function(){
+                $('.sub-menu').closest("a").preventDefault();
                 console.log('button click');
                 $('.sub-menu').toggle(500, function() {
                     $(this).css('display', 'block')

@@ -4,7 +4,7 @@ define(["jquery"], function($) {
 
         'use strict';
         var settings = $.extend({
-            auto: true,
+            auto: false,
             infinite: true
         }, options );
 
