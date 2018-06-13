@@ -1,7 +1,7 @@
 @import "mixins";
 @import "main";
 @import "slideshow";
-//@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 // Variables
 @background-color: #FEFEFE;
@@ -49,14 +49,8 @@ body.open {
 
 .main-header {
     .main-content;
-    //background: url("../img/header/img.png") no-repeat;
-    //background-size: 100%;
-    height: 550px;
+    height: 510px;
 }
-
-//.slideshow .slides .slide.active {
-//    opacity: 1;
-//}
 
 .features {
     .main-content;
@@ -66,6 +60,7 @@ body.open {
 .info {
     .main-content;
     background-color: @container-color;
+    height: 365px;
 }
 
 .social {
@@ -75,7 +70,7 @@ body.open {
 
 .container {
     .flex;
-    width: 80%;
+    width: 70%;
     .justify-content(space-between);
 }
 
@@ -101,11 +96,12 @@ body.open {
 }
 
 .header-content {
-    width: 50%;
-    padding-left: 100px;
+    width: 59%;
     p {
-        font-size: 1.3em;
+        font-size: 1.2em;
         color: white;
+        line-height: 31px;
+        margin: -7px 0 0 10px;
     }
 }
 
@@ -114,28 +110,42 @@ body.open {
 }
 
 .features-content {
-    padding: 50px 0;
-    width: 25%;
+    padding: 15px 0 47px 0;
+    width: 33%;
     text-align: center;
     h3 {
-        margin: 20px 0;
+        margin: 23px 0 0 -1px;
+        font-size: 19px;
     }
     p {
-        margin: 20px 0;
+        margin: 17px 0 0 32px;
+        font-size: 13px;
+        width: 291px;
+        text-align: center;
+        line-height: 22px;
+        letter-spacing: 0.5px;
     }
 }
 
 .info-content {
-    padding: 50px 0;
-    width: 45%;
-    p {
-        margin: 30px 0;
+    padding: 48px 0 0px 40px;
+    width: 43%;
+
+    h3 {
+        letter-spacing: -1px;
     }
+
+    p {
+        margin: 14px 0 18px 0px;
+        font-size: 15px;
+        line-height: 23px;
+    }
+
     form {
         .flex;
         .flex-direction(row);
         button {
-            width: 30%;
+            width: 26%;
         }
     }
 }
@@ -185,27 +195,6 @@ body.open {
         display: block;
     }
 
-
-
-    //div {
-    //    cursor: pointer;
-    //    display: inline-block;
-    //    list-style-type: none;
-    //    width: 50px;
-    //    height: 50px;
-    //    &:hover {
-    //        background-color: green;
-    //        cursor: pointer;
-    //    }
-    //    img {
-    //        width: 50px;
-    //        height: 50px;
-    //
-    //        &:hover {
-    //            opacity: 0.4;
-    //        }
-    //    }
-    //}
 }
 
 .main-footer {
