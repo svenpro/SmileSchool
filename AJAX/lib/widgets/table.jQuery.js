@@ -16,7 +16,7 @@ define([
            dialog: {
               color: 'lime',
               background: 'black'
-           } 
+           }
          },
          refresh: null
       },
@@ -35,12 +35,57 @@ define([
        * Check all data, call to ajax
        */
       checkData: function () {
+         console.log('CHeckDATA');
          var element = this.element;
-         this._trigger( "onLoadBefore" );
          this.ajaxRequest.init = element.data('ajax').length ? element.data('ajax') : '';
          this.callToAjax();
-         this._trigger( "onLoadAfter" );
       },
+
+       /**
+        * Call to Ajax
+        */
+       callToAjax: function () {
+           var self = this;
+           console.log('Call to ajax');
+
+           if (self.ajaxRequest.init.length) {
+               $.ajax({
+                   url: self.ajaxRequest.init,
+                   method: 'GET',
+                   cache: false,
+                   success: function (data) {
+                       if (typeof(data) == 'object') {
+                           self.ajaxRequest.response = data;
+                           self.onLoadAfter();
+                           self._refresh();
+                       }
+                   },
+                   statusCode: {
+                       403: function() {
+                           alert( "page forbidden" );
+                       }
+                   }
+               });
+           }
+
+       },
+
+       /**
+        * Init element
+        */
+       _init: function () {
+           var self = this;
+           var element = this.element;
+           console.log('INIT');
+           element.addClass(this.defaultClass);
+           element.append('<tbody>');
+
+           $.each(element.find('th'), function (key, elementTh) {
+               self.allowedColumn.push($(elementTh).data('column'));
+           });
+           this._refresh();
+
+       },
 
       /**
        * Refresh table
@@ -50,6 +95,7 @@ define([
       _refresh: function () {
          var element = this.element;
          var self = this;
+          console.log('Refresh');
          if (this.columnName.length != 0) {
 
             $.each(this.columnName, function(key, row) {
@@ -66,48 +112,7 @@ define([
             });
          }
 
-      },
 
-      /**
-       * Call to Ajax
-       */
-      callToAjax: function () {
-         var self = this;
-
-         if (self.ajaxRequest.init.length) {
-            $.ajax({
-               url: self.ajaxRequest.init,
-               method: 'GET',
-               cache: false,
-               success: function (data) {
-                  if (typeof(data) == 'object') {
-                     self.ajaxRequest.response = data;
-                     self.onLoadAfter();
-                     self._refresh();
-                  }
-               },
-               statusCode: {
-                  403: function() {
-                     alert( "page forbidden" );
-                  }
-               }
-            });
-         }
-      },
-
-      /**
-       * Init element
-       */
-      _init: function () {
-         var self = this;
-         var element = this.element;
-         element.addClass(this.defaultClass);
-         element.append('<tbody>');
-         
-         $.each(element.find('th'), function (key, elementTh) {
-            self.allowedColumn.push($(elementTh).data('column'));
-         });
-         this._refresh();
       },
 
       /**
@@ -115,10 +120,12 @@ define([
        */
       onLoadAfter: function () {
          var self = this;
+          console.log('Load after');
          $.each(this.ajaxRequest.response,function (key, value) {
             self.columnName.push(value);
             self.columnCount++;
          });
+
       }
    });
 });
