@@ -36,7 +36,7 @@
   font-size: 49px;
   line-height: 20px;
   color: #fff;
-  margin: 66px 3px;
+  margin: 95px 0 71px 0px;
 }
 .logo-title span {
   color: #2dcb71;
@@ -45,33 +45,40 @@
   color: #fff;
   font-size: 18px;
 }
-.os-icons {
-  margin-top: 30px;
-}
 .icon-cont {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #030303;
+  text-align: center;
+  margin: 5px 7px 60px 0px;
+  display: block;
+  opacity: 0.5;
+}
+.icon-cont-header {
   width: 52px;
   height: 52px;
   border-radius: 50%;
   background-color: #030303;
   text-align: center;
-  margin: 5px;
+  margin: 21px 10px 0 5px;
   display: block;
   opacity: 0.5;
 }
-.icon-cont-header {
-  width: 47px;
-  height: 47px;
-  border-radius: 50%;
-  background-color: #030303;
-  text-align: center;
-  margin: -13px 2px 0 9px;
-  display: block;
-  opacity: 0.5;
+.icon-cont-header:hover {
+  background-color: #2ecc71;
+  opacity: unset;
+  cursor: pointer;
 }
 .icon {
-  width: 20px;
-  height: 25px;
-  padding-top: 10px;
+  width: 19px;
+  height: 19px;
+  padding-top: 8px;
+}
+.icon-header {
+  width: 25px;
+  height: 26px;
+  padding-top: 12px;
 }
 .icon-cont:hover {
   background-color: #2ecc71;
@@ -79,35 +86,35 @@
   cursor: pointer;
 }
 .icon-serv {
-  width: 84px;
-  height: 84px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: url("../img/features/container.png") no-repeat;
   text-align: center;
-  margin: 35px 0 0 -4px;
+  margin: 60px 0 0 13px;
   display: inline-block;
 }
 .big-icon {
-  padding: 20px 0 0 0;
+  padding: 26px 0 0 0;
 }
 .mail {
-  height: 45px;
+  height: 50px;
   font-size: 17px;
   color: #848484;
   border: 1px solid #c8c8c8;
-  padding: 2px 0 0 19px;
+  padding: 4px 0 0 23px;
   border-radius: 15px 0 0 15px;
-  width: 247px;
+  width: 280px;
+  letter-spacing: 0.5px;
 }
 .btn {
-  height: 49px;
+  height: 56px;
   border-radius: 0 15px 15px 0;
   background-color: #2dcb71;
   border: none;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
-  margin-left: -7px;
 }
 .slideshow {
   padding: 0;
@@ -125,7 +132,7 @@
   position: absolute;
   width: 100%;
   min-height: 450px;
-  height: 550px;
+  height: 602px;
   left: 0;
   top: 8px;
   overflow: hidden;
@@ -138,7 +145,7 @@
 }
 .slideshow .slides .slide img {
   width: 100%;
-  height: 513px;
+  height: 602px;
 }
 .slideshow .slides .slide.active {
   opacity: 1;
@@ -177,12 +184,6 @@
 .prev:hover,
 .next:hover {
   opacity: 1;
-}
-@font-face {
-  font-family: 'Pacifico';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
 }
 * {
   margin: 0;
@@ -224,7 +225,7 @@ body.open {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 510px;
+  height: 598px;
 }
 .features {
   display: -webkit-box;
@@ -255,7 +256,7 @@ body.open {
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #E2E2E2;
-  height: 365px;
+  height: 427px;
 }
 .social {
   display: -webkit-box;
@@ -278,7 +279,7 @@ body.open {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  width: 70%;
+  width: 80%;
   -webkit-box-pack: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
@@ -290,12 +291,12 @@ body.open {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  width: 90%;
   -webkit-box-pack: space-around;
   -ms-flex-pack: space-around;
   justify-content: space-around;
   z-index: 3;
   height: 100%;
+  width: 100%;
 }
 .hand {
   display: -webkit-box;
@@ -322,10 +323,11 @@ body.open {
   width: 59%;
 }
 .header-content p {
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: white;
-  line-height: 31px;
-  margin: -7px 0 0 10px;
+  line-height: 36px;
+  margin: 0 0 0 5px;
+  letter-spacing: 1px;
 }
 .features-container {
   display: -webkit-box;
@@ -333,39 +335,39 @@ body.open {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  width: 70%;
+  width: 80%;
   -webkit-box-pack: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
 }
 .features-content {
-  padding: 15px 0 47px 0;
-  width: 33%;
+  width: 32%;
   text-align: center;
 }
 .features-content h3 {
-  margin: 23px 0 0 -1px;
-  font-size: 19px;
+  margin: 25px 0 0 14px;
+  font-size: 21px;
+  letter-spacing: 0.5px;
 }
 .features-content p {
-  margin: 17px 0 0 32px;
-  font-size: 13px;
-  width: 291px;
+  margin: 22px 0 56px 46px;
+  font-size: 15px;
+  width: 328px;
   text-align: center;
-  line-height: 22px;
+  line-height: 24px;
   letter-spacing: 0.5px;
 }
 .info-content {
-  padding: 48px 0 0px 40px;
-  width: 43%;
+  padding: 57px 0 0px 51px;
+  width: 50%;
 }
 .info-content h3 {
-  letter-spacing: -1px;
+  letter-spacing: 0.6px;
 }
 .info-content p {
-  margin: 14px 0 18px 0px;
+  margin: 20px 0 21px 0px;
   font-size: 15px;
-  line-height: 23px;
+  line-height: 26px;
 }
 .info-content form {
   display: -webkit-box;
@@ -379,7 +381,11 @@ body.open {
   flex-direction: row;
 }
 .info-content form button {
-  width: 26%;
+  width: 24%;
+}
+.info-content iframe {
+  border-radius: 15px;
+  margin: 3px 0 0 46px;
 }
 .row {
   display: -webkit-box;
@@ -397,15 +403,27 @@ body.open {
   width: 100%;
 }
 .social-content {
-  padding: 20px 0;
-  height: 20%;
   text-align: center;
 }
-.social-content p {
-  padding-top: 30px;
+.social-content .info-paragraph {
+  margin: 53px 0 17px 215px;
+  width: 68%;
+  font-style: italic;
+  line-height: 29px;
+  letter-spacing: 0.4px;
 }
 .social-content h3 {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+}
+.social-content .social-paragraph {
+  margin: 18px 0 20px 8px;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+}
+.social-content .social-header {
+  font-size: 23px;
+  margin: 52px 0 15px 0;
+  letter-spacing: 0.6px;
 }
 .social {
   display: -webkit-box;
@@ -420,6 +438,7 @@ body.open {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 101%;
 }
 .social .social-mobile {
   display: -webkit-box;
@@ -444,7 +463,7 @@ body.open {
   display: block;
 }
 .main-footer {
-  padding: 2.17rem 5% 3.17rem 5%;
+  padding: 2.17rem 5% 5.17rem 5%;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;

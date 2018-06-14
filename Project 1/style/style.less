@@ -1,7 +1,7 @@
 @import "mixins";
 @import "main";
 @import "slideshow";
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
+//@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 // Variables
 @background-color: #FEFEFE;
@@ -49,7 +49,7 @@ body.open {
 
 .main-header {
     .main-content;
-    height: 510px;
+    height: 598px;
 }
 
 .features {
@@ -60,7 +60,7 @@ body.open {
 .info {
     .main-content;
     background-color: @container-color;
-    height: 365px;
+    height: 427px
 }
 
 .social {
@@ -70,17 +70,17 @@ body.open {
 
 .container {
     .flex;
-    width: 70%;
+    width: 80%;
     .justify-content(space-between);
 }
 
 .header-container {
     padding-top: 90px;
     .flex;
-    width: 90%;
     .justify-content(space-around);
     z-index: 3;
     height: 100%;
+    width: 100%;
 }
 
 .hand {
@@ -98,10 +98,11 @@ body.open {
 .header-content {
     width: 59%;
     p {
-        font-size: 1.2em;
+        font-size: 1.3em;
         color: white;
-        line-height: 31px;
-        margin: -7px 0 0 10px;
+        line-height: 36px;
+        margin: 0 0 0 5px;
+        letter-spacing: 1px;
     }
 }
 
@@ -110,43 +111,49 @@ body.open {
 }
 
 .features-content {
-    padding: 15px 0 47px 0;
-    width: 33%;
+    //padding: 25px 0 85px 0;
+    width: 32%;
     text-align: center;
     h3 {
-        margin: 23px 0 0 -1px;
-        font-size: 19px;
+        margin: 25px 0 0 14px;
+        font-size: 21px;
+        letter-spacing: 0.5px;
     }
     p {
-        margin: 17px 0 0 32px;
-        font-size: 13px;
-        width: 291px;
+        margin: 22px 0 56px 46px;
+        font-size: 15px;
+        width: 328px;
         text-align: center;
-        line-height: 22px;
+        line-height: 24px;
         letter-spacing: 0.5px;
     }
 }
 
 .info-content {
-    padding: 48px 0 0px 40px;
-    width: 43%;
+    padding: 57px 0 0px 51px;
+    width: 50%;
 
     h3 {
-        letter-spacing: -1px;
+        letter-spacing: 0.6px;
     }
 
     p {
-        margin: 14px 0 18px 0px;
+        margin: 20px 0 21px 0px;
         font-size: 15px;
-        line-height: 23px;
+        line-height: 26px;
     }
 
     form {
         .flex;
         .flex-direction(row);
         button {
-            width: 26%;
+            width: 24%;
         }
+    }
+
+    iframe {
+        border-radius: 15px;
+        margin: 3px 0 0 46px;
     }
 }
 
@@ -158,14 +165,28 @@ body.open {
 }
 
 .social-content {
-    padding: 20px 0;
-    height: 20%;
     text-align: center;
-    p {
-        padding-top: 30px;
+    .info-paragraph {
+        margin: 53px 0 17px 215px;
+        width: 68%;
+        font-style: italic;
+        line-height: 29px;
+        letter-spacing: 0.4px;
     }
     h3 {
-        margin-bottom: 20px;
+        margin-bottom: 24px;
+    }
+
+    .social-paragraph {
+        margin: 18px 0 20px 8px;
+        font-size: 15px;
+        letter-spacing: 0.6px;
+    }
+
+    .social-header{
+        font-size: 23px;
+        margin: 52px 0 15px 0;
+        letter-spacing: 0.6px;
     }
 }
 
@@ -173,6 +194,7 @@ body.open {
     .flex;
     .flex-direction(row);
     .align-items(center);
+    width: 101%;
     .social-mobile {
         .flex;
         .flex-direction(row);
@@ -198,7 +220,7 @@ body.open {
 }
 
 .main-footer {
-    padding: 2.17rem 5% 3.17rem 5%;
+    padding: 2.17rem 5% 5.17rem 5%;
     .flex;
     .flex-direction(row);
     .align-items(center);
