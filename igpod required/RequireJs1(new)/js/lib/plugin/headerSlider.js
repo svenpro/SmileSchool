@@ -1,6 +1,6 @@
 define(["jquery"], function($) {
 
-       $.fn.headerSlider = function() {
+       $.fn.headerSlider = function(options) {
 
        var settings = $.extend({
                slideNow: 1,
@@ -52,7 +52,7 @@ define(["jquery"], function($) {
             });
             settings.slideNow = settings.slideCount;
         } else {
-            translateWidth = -$('#viewport').width() * (settings.slideNow - 2);
+            settings.translateWidth = -$('#viewport').width() * (settings.slideNow - 2);
             $('#slidewrapper').css({
                 'transform': 'translate(' + settings.translateWidth + 'px, 0)',
                 '-webkit-transform': 'translate(' + settings.translateWidth + 'px, 0)',
@@ -63,4 +63,4 @@ define(["jquery"], function($) {
 
 
     }
-};
+});
