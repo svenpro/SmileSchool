@@ -185,6 +185,12 @@
 .next:hover {
   opacity: 1;
 }
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
+}
 * {
   margin: 0;
   padding: 0;
@@ -327,7 +333,7 @@ body.open {
   color: white;
   line-height: 36px;
   margin: 0 0 0 5px;
-  letter-spacing: 1px;
+  letter-spacing: 0.9px;
 }
 .features-container {
   display: -webkit-box;
@@ -452,7 +458,7 @@ body.open {
   flex-direction: row;
 }
 .gallery {
-  width: 100%;
+  width: 99%;
 }
 .gallery .slick-slide img:hover {
   color: #2ECB71;

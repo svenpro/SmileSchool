@@ -1,7 +1,7 @@
 @import "mixins";
 @import "main";
 @import "slideshow";
-//@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 // Variables
 @background-color: #FEFEFE;
@@ -102,7 +102,7 @@ body.open {
         color: white;
         line-height: 36px;
         margin: 0 0 0 5px;
-        letter-spacing: 1px;
+        letter-spacing: 0.9px;
     }
 }
 
@@ -205,7 +205,11 @@ body.open {
     //.flex;
     //.flex-direction(center);
     //.justify-content(center);
-    width: 100%;
+    width: 99%;
+
+    .slick-list {
+
+    }
 
     .slick-slide img:hover {
         color: @button-color;
