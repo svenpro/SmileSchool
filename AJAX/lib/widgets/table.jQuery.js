@@ -35,7 +35,6 @@ define([
        * Check all data, call to ajax
        */
       checkData: function () {
-         console.log('CHeckDATA');
          var element = this.element;
          this.ajaxRequest.init = element.data('ajax').length ? element.data('ajax') : '';
          this.callToAjax();
@@ -46,7 +45,6 @@ define([
         */
        callToAjax: function () {
            var self = this;
-           console.log('Call to ajax');
 
            if (self.ajaxRequest.init.length) {
                $.ajax({
@@ -95,6 +93,7 @@ define([
       _refresh: function () {
          var element = this.element;
          var self = this;
+
           console.log('Refresh');
          if (this.columnName.length != 0) {
 
@@ -125,6 +124,8 @@ define([
             self.columnName.push(value);
             self.columnCount++;
          });
+         console.log( self.columnName);
+
 
       }
    });
