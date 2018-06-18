@@ -64,7 +64,7 @@ define([
                   }
                });
                element.find('tbody').append(tableTR);
-               element.find('td:last').html("<button class='address"+row.id+"'>Address</button>");
+               element.find('td:last').html("<button class='address"+row.id+"'>Address</button><button class='delete"+row.id+"'>Delete</button>");
                // $("."+row.id).on('click', function() {
                //    console.log(row);
                // });

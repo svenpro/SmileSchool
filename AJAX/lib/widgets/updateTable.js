@@ -48,22 +48,30 @@ define([
             var dialog = $("#dialog");
 
             $.each(self.ajaxData, function(key, value) {
-                console.log(value.id);
                 // element.find('td:last').html("<button class='address"+value.id+"'>Address</button>");
                 $(".address"+value.id).on('click', function() {
-                    console.log(value);
+                    dialog.find('tbody').html("");
                     dialog.dialog( "open" );
+                    var tabTR = $('<tr>');
+                    $.each(value.address, function (key, value) {
+                        var content = '';
+                        content += '<tr><td>'+ key +'</td><td>'+ value +'</td></tr>';
+                        tabTR.append('<td>'+ key +'</td><td>'+ value +'</td>' );
 
-                    var tableTR = $('<tr>');
-                    $.each(value, function (key, row) {
-                        var tableTd = '';
-                        tableTd = $('<td>').text(row);
-                        tableTR.append(tableTd);
+                        dialog.find('tbody').append(content);
                     });
-                    var addrTable = "";
-                    $(".tableDialog").append(tableTR);
+                    dialog.find('tr:last').html("");
+                    $.each(value.address.geo, function (key, value) {
+                        dialog.find('tbody').append('<tr><td>'+key+'</td><td>'+value+'</td></tr>');
+                    });
+                });
+
+                $(".delete"+value.id).on('click', function() {
+                    $(this).closest('tr').html("");
                 });
             });
+
+
 
             dialog.dialog({
                 autoOpen: false,
@@ -76,19 +84,7 @@ define([
                     duration: 500
                 }
             });
-
-
-            //
-            // $.each(self.ajaxData, function(key, value) {
-            //     element.find('td:last').html("<button class='address"+value.id+"'>Address</button>");
-            //
-            //     $(".address"+value.id).on('click', function() {
-            //         console.log(row);
-            //     });
-            // });
-
         }
-
 
 })
 });
