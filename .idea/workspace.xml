@@ -2,97 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c552e23a-3be5-41ac-beb9-0a56ebb32d27" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/AJAX/.idea/AJAX.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/css/styles.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/images/ui-bg_glass_20_555555_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/images/ui-bg_glass_40_0078a3_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/images/ui-bg_glass_40_ffc73d_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/images/ui-bg_gloss-wave_25_333333_500x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/images/ui-bg_inset-soft_25_000000_1x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/images/ui-bg_inset-soft_30_f58400_1x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/images/ui-icons_222222_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/images/ui-icons_4b8e0b_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/images/ui-icons_a83300_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/images/ui-icons_cccccc_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/images/ui-icons_ffffff_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/js/init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/js/requirejs-config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/lib/jQuery/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/lib/jQuery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/lib/require.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/lib/widgets/table.jQuery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/lib/widgets/updateTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_444444_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_555555_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_777620_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_777777_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_cc0000_256x240.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Less/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Less/styles/mixins/lib.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Less/styles/mixins/lib.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Less/styles/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Less/styles/styles.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project 1/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/js/app/function.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/js/lib/jquery-ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/js/lib/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/js/lib/plugin/scroll-to-top.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/js/lib/require.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/js/lib/widgets/accordion-extend.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/js/lib/widgets/new-widget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/styles/lib/bac-to-top.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/styles/lib/images/ui-icons_444444_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/styles/lib/images/ui-icons_555555_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/styles/lib/images/ui-icons_777620_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/styles/lib/images/ui-icons_777777_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/styles/lib/images/ui-icons_cc0000_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/styles/lib/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/styles/lib/jquery-ui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/styles/mixins/lib.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/styles/mixins/lib.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/styles/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequireJs/styles/styles.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/js/function.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/js/lib/jquery-ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/js/lib/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/js/lib/plugin/scroll-to-top.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/js/lib/widgets/accordion-extend.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/js/lib/widgets/new-widget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/styles/lib/bac-to-top.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/styles/lib/images/ui-icons_444444_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/styles/lib/images/ui-icons_555555_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/styles/lib/images/ui-icons_777620_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/styles/lib/images/ui-icons_777777_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/styles/lib/images/ui-icons_cc0000_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/styles/lib/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/styles/lib/jquery-ui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/styles/mixins/lib.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/styles/mixins/lib.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/styles/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryPlugin/styles/styles.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/js/function.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/js/lib/jquery-ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/js/lib/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/js/lib/widgets/accordion-extend.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/js/lib/widgets/new-widget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/styles/lib/images/ui-icons_444444_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/styles/lib/images/ui-icons_555555_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/styles/lib/images/ui-icons_777620_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/styles/lib/images/ui-icons_777777_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/styles/lib/images/ui-icons_cc0000_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/styles/lib/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/styles/lib/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/jquery-ui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/styles/mixins/lib.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/styles/mixins/lib.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/styles/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryWidgets/styles/styles.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-bg_glass_20_555555_1x400.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-bg_glass_20_555555_1x400.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-bg_glass_40_0078a3_1x400.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-bg_glass_40_0078a3_1x400.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-bg_glass_40_ffc73d_1x400.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-bg_glass_40_ffc73d_1x400.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-bg_gloss-wave_25_333333_500x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-bg_gloss-wave_25_333333_500x100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-bg_inset-soft_25_000000_1x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-bg_inset-soft_25_000000_1x100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-bg_inset-soft_30_f58400_1x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-bg_inset-soft_30_f58400_1x100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-icons_222222_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-icons_4b8e0b_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_4b8e0b_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-icons_a83300_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_a83300_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-icons_cccccc_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_cccccc_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-icons_ffffff_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/lib/widgets/updateTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/lib/widgets/updateTable.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -106,8 +35,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AJAX/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+            <state relative-caret-position="391">
+              <caret line="23" column="29" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -115,8 +44,8 @@
       <file leaf-file-name="updateTable.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AJAX/lib/widgets/updateTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+            <state relative-caret-position="416">
+              <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -124,8 +53,8 @@
       <file leaf-file-name="table.jQuery.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AJAX/lib/widgets/table.jQuery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="66" selection-start-line="66" selection-end-line="67" />
+            <state relative-caret-position="409">
+              <caret line="65" column="53" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -133,8 +62,8 @@
       <file leaf-file-name="init.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AJAX/js/init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="153">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -194,8 +123,8 @@
         <option value="$PROJECT_DIR$/RequireJs/js/lib/plugin/scroll-to-top.js" />
         <option value="$PROJECT_DIR$/AJAX/js/requirejs-config.js" />
         <option value="$PROJECT_DIR$/AJAX/js/init.js" />
-        <option value="$PROJECT_DIR$/AJAX/index.html" />
         <option value="$PROJECT_DIR$/AJAX/lib/widgets/table.jQuery.js" />
+        <option value="$PROJECT_DIR$/AJAX/index.html" />
         <option value="$PROJECT_DIR$/AJAX/lib/widgets/updateTable.js" />
       </list>
     </option>
@@ -237,6 +166,19 @@
               <item name="SmileSchool" type="b2602c69:ProjectViewProjectNode" />
               <item name="SmileSchool" type="462c0819:PsiDirectoryNode" />
               <item name="AJAX" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmileSchool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmileSchool" type="462c0819:PsiDirectoryNode" />
+              <item name="AJAX" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmileSchool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmileSchool" type="462c0819:PsiDirectoryNode" />
+              <item name="AJAX" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -271,7 +213,7 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Projects/maxitoys-magento" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -285,13 +227,15 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Project 1/style/slick" />
-      <recent name="$PROJECT_DIR$/Project 1/js/slick" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\project1\SmileSchool\AJAX\css" />
       <recent name="$PROJECT_DIR$/Project 1/style" />
       <recent name="$PROJECT_DIR$/Project 1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\project1\SmileSchool\AJAX\css\images" />
+      <recent name="$PROJECT_DIR$/Project 1/style/slick" />
+      <recent name="$PROJECT_DIR$/Project 1/js/slick" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -347,6 +291,7 @@
       <workItem from="1528702196251" duration="3419000" />
       <workItem from="1528787333174" duration="56000" />
       <workItem from="1529255462116" duration="6329000" />
+      <workItem from="1529309812888" duration="4755000" />
     </task>
     <task id="LOCAL-00001" summary="homework-3.2">
       <created>1526541668026</created>
@@ -401,7 +346,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125851000" />
+    <option name="totallyTimeSpent" value="130606000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -413,21 +358,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="80" y="-5" width="1841" height="1086" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17386428" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17537314" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5041459" side_tool="true" weight="0.32984293" />
       <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32984293" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.49585405" visible="true" weight="0.30952382" />
-      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49585405" visible="true" weight="0.3093682" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
@@ -456,45 +401,28 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Project 1/style/main.less" />
-    <entry file="file://$PROJECT_DIR$/Project 1/index.html">
+    <entry file="file://$PROJECT_DIR$/AJAX/lib/widgets/updateTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        <state relative-caret-position="935">
+          <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Project 1/style/main.less" />
+    <entry file="file://$PROJECT_DIR$/Project 1/index.html" />
     <entry file="file://$PROJECT_DIR$/Project 1/style/style.css" />
     <entry file="file://$PROJECT_DIR$/Project 1/style/main.less" />
-    <entry file="file://$PROJECT_DIR$/Project 1/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project 1/index.html" />
     <entry file="file://$PROJECT_DIR$/Project 1/style/style.css" />
     <entry file="file://$PROJECT_DIR$/Project 1/style/main.less" />
-    <entry file="file://$PROJECT_DIR$/Project 1/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project 1/index.html" />
     <entry file="file://$PROJECT_DIR$/Project 1/style/style.css" />
     <entry file="file://$PROJECT_DIR$/Project 1/style/main.less" />
-    <entry file="file://$PROJECT_DIR$/Project 1/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project 1/index.html" />
     <entry file="file://$PROJECT_DIR$/Project 1/style/style.css" />
     <entry file="file://$PROJECT_DIR$/package-lock.json" />
     <entry file="file://$PROJECT_DIR$/Project 1/style/mixins.css" />
@@ -511,9 +439,6 @@
     <entry file="file://$PROJECT_DIR$/Project 1/style/slick/slick.scss" />
     <entry file="file://$PROJECT_DIR$/slick-master/index.html" />
     <entry file="file://$PROJECT_DIR$/Project 1/style/slideshow.css" />
-    <entry file="file://$PROJECT_DIR$/Project 1/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project 1/style/style.less" />
     <entry file="file://$PROJECT_DIR$/Project 1/js/jquery-ui.js" />
     <entry file="file://$PROJECT_DIR$/Project 1/style/style.css" />
@@ -522,70 +447,18 @@
     <entry file="file://$PROJECT_DIR$/Project 1/js/widgets/menu-extend.js" />
     <entry file="file://$PROJECT_DIR$/Project 1/js/main.js" />
     <entry file="file://$PROJECT_DIR$/Project 1/js/plugins/powerSlide.js" />
-    <entry file="file://$PROJECT_DIR$/RequireJs/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RequireJs/js/lib/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-814">
-          <caret line="174" selection-start-line="174" selection-end-line="174" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RequireJs/js/lib/require.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-486" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RequireJs/js/lib/jquery-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RequireJs/js/lib/widgets/accordion-extend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2016">
-          <caret line="112" column="9" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/RequireJs/js/main.js" />
+    <entry file="file://$PROJECT_DIR$/RequireJs/js/lib/jquery.js" />
+    <entry file="file://$PROJECT_DIR$/RequireJs/js/lib/require.js" />
+    <entry file="file://$PROJECT_DIR$/RequireJs/js/lib/jquery-ui.js" />
+    <entry file="file://$PROJECT_DIR$/RequireJs/js/lib/widgets/accordion-extend.js" />
     <entry file="file://$PROJECT_DIR$/AJAX/lib/widgets/tooltip.widget.js" />
-    <entry file="file://$PROJECT_DIR$/RequireJs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RequireJs/js/app/function.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/RequireJs/index.html" />
+    <entry file="file://$PROJECT_DIR$/RequireJs/js/app/function.js" />
     <entry file="file://$PROJECT_DIR$/AJAX/lib/require.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/RequireJs/js/lib/plugin/scroll-to-top.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/RequireJs/js/lib/plugin/scroll-to-top.js" />
     <entry file="file://$PROJECT_DIR$/AJAX/js/requirejs-config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -595,29 +468,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AJAX/js/init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="153">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AJAX/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        <state relative-caret-position="391">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AJAX/lib/widgets/table.jQuery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="66" selection-start-line="66" selection-end-line="67" />
+        <state relative-caret-position="409">
+          <caret line="65" column="53" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AJAX/lib/widgets/updateTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        <state relative-caret-position="416">
+          <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
         </state>
       </provider>
     </entry>
