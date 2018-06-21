@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c552e23a-3be5-41ac-beb9-0a56ebb32d27" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_444444_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_555555_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_777620_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_777777_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_cc0000_256x240.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-bg_glass_20_555555_1x400.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-bg_glass_20_555555_1x400.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-bg_glass_40_0078a3_1x400.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-bg_glass_40_0078a3_1x400.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-bg_glass_40_ffc73d_1x400.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-bg_glass_40_ffc73d_1x400.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-bg_gloss-wave_25_333333_500x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-bg_gloss-wave_25_333333_500x100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-bg_inset-soft_25_000000_1x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-bg_inset-soft_25_000000_1x100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-bg_inset-soft_30_f58400_1x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-bg_inset-soft_30_f58400_1x100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-icons_222222_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_222222_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-icons_4b8e0b_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_4b8e0b_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-icons_a83300_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_a83300_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-icons_cccccc_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_cccccc_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/images/ui-icons_ffffff_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/css/images/ui-icons_ffffff_256x240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/lib/widgets/updateTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/lib/widgets/updateTable.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +16,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AJAX/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="29" />
+            <state relative-caret-position="348">
+              <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -44,8 +25,8 @@
       <file leaf-file-name="updateTable.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AJAX/lib/widgets/updateTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+            <state relative-caret-position="433">
+              <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -53,8 +34,8 @@
       <file leaf-file-name="table.jQuery.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AJAX/lib/widgets/table.jQuery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="65" column="53" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="53" />
+            <state relative-caret-position="426">
+              <caret line="66" column="134" selection-start-line="66" selection-start-column="134" selection-end-line="66" selection-end-column="134" />
             </state>
           </provider>
         </entry>
@@ -123,8 +104,8 @@
         <option value="$PROJECT_DIR$/RequireJs/js/lib/plugin/scroll-to-top.js" />
         <option value="$PROJECT_DIR$/AJAX/js/requirejs-config.js" />
         <option value="$PROJECT_DIR$/AJAX/js/init.js" />
-        <option value="$PROJECT_DIR$/AJAX/lib/widgets/table.jQuery.js" />
         <option value="$PROJECT_DIR$/AJAX/index.html" />
+        <option value="$PROJECT_DIR$/AJAX/lib/widgets/table.jQuery.js" />
         <option value="$PROJECT_DIR$/AJAX/lib/widgets/updateTable.js" />
       </list>
     </option>
@@ -291,7 +272,7 @@
       <workItem from="1528702196251" duration="3419000" />
       <workItem from="1528787333174" duration="56000" />
       <workItem from="1529255462116" duration="6329000" />
-      <workItem from="1529309812888" duration="4755000" />
+      <workItem from="1529309812888" duration="10578000" />
     </task>
     <task id="LOCAL-00001" summary="homework-3.2">
       <created>1526541668026</created>
@@ -342,11 +323,25 @@
       <option name="project" value="LOCAL" />
       <updated>1528045817654</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="homework-10.1">
+      <created>1529324036286</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1529324036286</updated>
+    </task>
+    <task id="LOCAL-00009" summary="homework-10.2">
+      <created>1529330563652</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1529330563652</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130606000" />
+    <option name="totallyTimeSpent" value="136429000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -397,11 +392,13 @@
     <MESSAGE value="homework-5.3" />
     <MESSAGE value="homework-5.1" />
     <MESSAGE value="homework-7.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework-7.1" />
+    <MESSAGE value="homework-10.1" />
+    <MESSAGE value="homework-10.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework-10.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -475,22 +472,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AJAX/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="29" />
+        <state relative-caret-position="348">
+          <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AJAX/lib/widgets/table.jQuery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="65" column="53" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="53" />
+        <state relative-caret-position="426">
+          <caret line="66" column="134" selection-start-line="66" selection-start-column="134" selection-end-line="66" selection-end-column="134" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AJAX/lib/widgets/updateTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+        <state relative-caret-position="433">
+          <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
         </state>
       </provider>
     </entry>
