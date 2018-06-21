@@ -16,39 +16,59 @@ define([
         _create: function () {
 
             this._super();
-            this.callAjax();
 
         },
 
-        callAjax: function () {
+        callToAjax: function () {
             var self = this;
-            var element = this.element;
 
-            $.ajax({
-                url: element.data('ajax').length ? element.data('ajax') : '',
-                method: 'GET',
-                cache: false,
-                success: function (data) {
-                    if (typeof(data) == 'object') {
-                        self.ajaxData = data;
-                        self.newAddress();
+            if (self.ajaxRequest.init.length) {
+                $.ajax({
+                    url: self.ajaxRequest.init,
+                    method: 'GET',
+                    cache: false,
+                    success: function (data) {
+                        if (typeof(data) == 'object') {
+                            self.ajaxRequest.response = data;
+                            self.onLoadAfter();
+                            self._refresh();
+                            self.ajaxData = data;
+                            self.newAddress();
+                        }
+                    },
+                    statusCode: {
+                        403: function() {
+                            alert( "page forbidden" );
+                        }
                     }
-                },
-                statusCode: {
-                    403: function () {
-                        alert("page forbidden");
-                    }
-                }
-            });
+                });
+            }
+        },
+
+        _refresh: function () {
+            var element = this.element;
+            var self = this;
+            if (this.columnName.length != 0) {
+                $.each(this.columnName, function(key, row) {
+                    var tableTR = $('<tr>');
+                    $.each(row, function(key, value){
+                        var tableTD = '';
+                        if ($.inArray(key, self.allowedColumn) >= 0) {
+                            tableTD = $('<td>').text(value);
+                            tableTR.append(tableTD);
+                        }
+                    });
+                    element.find('tbody').append(tableTR);
+                    element.find('td:last').html("<button class='address"+row.id+"'>Address</button><button class='delete"+row.id+"'>Delete</button>");
+                });
+            }
+
         },
 
         newAddress: function () {
             var self = this;
-            var element = this.element;
             var dialog = $("#dialog");
-
             $.each(self.ajaxData, function(key, value) {
-                // element.find('td:last').html("<button class='address"+value.id+"'>Address</button>");
                 $(".address"+value.id).on('click', function() {
                     dialog.find('tbody').html("");
                     dialog.dialog( "open" );
@@ -71,9 +91,7 @@ define([
                 });
             });
 
-
-
-            dialog.dialog({
+            $("#dialog").dialog({
                 autoOpen: false,
                 show: {
                     effect: "blind",

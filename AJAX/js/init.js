@@ -6,5 +6,7 @@ require([
 ], function($) {
     $(function () {
         $(".tableSmile").updateTable();
+
+
     });
 });
