@@ -12,18 +12,10 @@
 $welcomeMessage = $block->getWelcome();
 ?>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet commodi ea eaque incidunt, inventore, ipsum modi nobis porro rem reprehenderit sapiente tempore unde. Delectus eius ipsa voluptatem voluptatum.</p>
 <?php switch ($block->getShowPart()):
     case 'welcome': ?>
         <li class="greet welcome" data-bind="scope: 'customer'">
-            <!-- ko if: customer().fullname  -->
-            <span data-bind="text: new String('<?= $block->escapeHtml(__('Welcome, %1!', '%1')) ?>').replace('%1', customer().fullname)">
-            </span>
-            <!-- /ko -->
-            <!-- ko ifnot: customer().fullname  -->
-            <span data-bind='html:"<?= $block->escapeHtml($welcomeMessage) ?>"'></span>
-            <?= $block->getBlockHtml('header.additional') ?>
-            <!-- /ko -->
+            <img src="pub/static/frontend/Smile/megatheme/en_US/images/globe-online-world-icon--7.png"/>
         </li>
         <script type="text/x-magento-init">
         {

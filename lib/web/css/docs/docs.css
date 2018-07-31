@@ -1,34 +1,3 @@
-@media only screen and (max-width: 767px) {
-  .modal-popup.modal-slide {
-    left: 14.8rem;
-    z-index: 900;
-  }
-  .modal-popup.modal-slide._show .modal-inner-wrap {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  .modal-popup.modal-slide .modal-inner-wrap {
-    height: 100%;
-    overflow-y: auto;
-    position: static;
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    width: auto;
-  }
-  .modal-popup.modal-slide .modal-inner-wrap {
-    margin: 0;
-    max-height: none;
-  }
-  .example-responsive-block {
-    background: #ffc;
-  }
-  .example-responsive-block:before {
-    content: 'Mobile styles ';
-    font-weight: bold;
-  }
-}
 @media all and (min-width: 768px), print {
   .example-responsive-block {
     background: #ccf;

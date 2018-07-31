@@ -7,32 +7,45 @@
 -->
 <page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceBlock name="logo" remove="true"/>
+        <referenceContainer name="header-wrapper">
+            <block class="Magento\Cms\Block\Block" name="menu.1" after="logo">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">block-menu_1</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
         <referenceContainer name="footer">
             <referenceBlock name="footer_links" remove="true"/>
             <block class="Magento\Cms\Block\Block" name="footer.1" after="-">
                 <arguments>
-                    <argument name="block_id" xsi:type="string">Footer_1</argument>
+                    <argument name="block_id" xsi:type="string">NewFooter_3242</argument>
                 </arguments>
             </block>
             <block class="Magento\Cms\Block\Block" name="footer.2" after="-">
                 <arguments>
-                    <argument name="block_id" xsi:type="string">Footer_2</argument>
+                    <argument name="block_id" xsi:type="string">NewFooter_2</argument>
                 </arguments>
             </block>
             <block class="Magento\Cms\Block\Block" name="footer.3" after="-">
                 <arguments>
-                    <argument name="block_id" xsi:type="string">Footer_3</argument>
+                    <argument name="block_id" xsi:type="string">NewFooter_3</argument>
                 </arguments>
             </block>
             <block class="Magento\Cms\Block\Block" name="footer.4" after="-">
                 <arguments>
-                    <argument name="block_id" xsi:type="string">Footer_4</argument>
+                    <argument name="block_id" xsi:type="string">NewFooter_4</argument>
                 </arguments>
             </block>
             <block class="Magento\Cms\Block\Block" name="footer.5" after="-">
                 <arguments>
-                    <argument name="block_id" xsi:type="string">Footer_5</argument>
+                    <argument name="block_id" xsi:type="string">NewFooter_5</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+        <referenceContainer name="page.messages">
+            <block class="Magento\Cms\Block\Block" name="page.content" after="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">page_content_1</argument>
                 </arguments>
             </block>
         </referenceContainer>
