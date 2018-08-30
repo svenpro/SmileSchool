@@ -1,0 +1,51 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var \Magento\Customer\Block\Account\AuthorizationLink $block */
+
+$dataPostParam = '';
+if ($block->isLoggedIn()) {
+    $dataPostParam = sprintf(" data-post='%s'", $block->getPostParams());
+}
+?>
+<!--data-label="--><?//= $block->escapeHtmlAttr(__('or')) ?><!--"-->
+<li class="authorization-link">
+    <div data-block="custom-login" class="custom-login-wrapper">
+        <a class="action customer-login" <?= /* @noEscape */ $block->getLinkAttributes() ?><?= /* @noEscape */ $dataPostParam ?> data-bind="scope: 'custom-login_content'">
+            <?= $block->escapeHtml($block->getLabel()) ?>
+        </a>
+        <div class="block block-customer-login" data-mage-init='{"dropdownDialog": {
+            "appendTo":"[data-block=custom-login]",
+            "triggerTarget":".customer-login",
+            "timeout": "500",
+            "closeOnMouseLeave": true,
+            "closeOnEscape": true,
+            "triggerClass":"active",
+            "parentClass":"active",
+            "triggerEvent":"hover"
+         }}' style="display:none">
+            <?= $block->getBlockHtml('login.dropdown'); ?>
+            <div class="block block-new-customer">
+                <div class="block-title">
+                    <strong id="block-new-customer-heading" role="heading" aria-level="2"><?= $block->escapeHtml(__('New Customers')) ?></strong>
+                </div>
+                <div class="block-content" aria-labelledby="block-new-customer-heading">
+                    <p><?= $block->escapeHtml(__('Creating an account has many benefits: check out faster, keep more than one address, track orders and more.')) ?></p>
+                    <div class="actions-toolbar">
+                        <div class="primary">
+                            <a href="<?= $block->escapeUrl('customer/account/create'); ?>" class="action create primary"><span><?= $block->escapeHtml(__('Create an Account')) ?></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</li>
+
+

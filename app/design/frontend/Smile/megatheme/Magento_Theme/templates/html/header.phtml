@@ -14,9 +14,7 @@ $welcomeMessage = $block->getWelcome();
 
 <?php switch ($block->getShowPart()):
     case 'welcome': ?>
-        <li class="greet welcome" data-bind="scope: 'customer'">
-            <img src="pub/static/frontend/Smile/megatheme/en_US/images/globe-online-world-icon--7.png"/>
-        </li>
+        <?php echo $block->getChildHtml('language_switch') ?>
         <script type="text/x-magento-init">
         {
             "*": {

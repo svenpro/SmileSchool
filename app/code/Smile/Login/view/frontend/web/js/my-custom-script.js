@@ -10,34 +10,37 @@ define([
 
     console.log('my custom scr');
 
-    return function(config, element) {
-
-        var backToTop = function () {
-
-            var scrollTop = $(window).scrollTop();
-
-            if (scrollTop > config.scrollTriggerHeight) {
-                $(element).addClass(config.showClass);
-            } else {
-                $(element).removeClass(config.showClass);
-            }
-        };
-
-        backToTop();
-
-        console.log(config);
-
-        $(window).on('scroll', function () {
-            backToTop();
-        });
-
-        $(element).on('click', function (e) {
-            e.preventDefault();
-            $('html,body').animate({
-                scrollTop: 0
-            }, config.speed);
-        });
-
-    };
+    // $.fn.backToTop = function(options) {
+    //
+    //     var settings = $.extend({
+    //         speed: 200,
+    //         showClass: 'show',
+    //         scrollTriggerHeight: 200
+    //     }, options );
+    //
+    //     this.backToTop = function () {
+    //         var scrollTop = $(window).scrollTop();
+    //
+    //         if (scrollTop > settings.scrollTriggerHeight) {
+    //             $(this.selector).addClass(settings.showClass);
+    //         } else {
+    //             $(this.selector).removeClass(settings.showClass);
+    //         }
+    //     };
+    //
+    //     this.backToTop();
+    //
+    //     $(window).on('scroll', function () {
+    //         this.backToTop();
+    //     }.bind(this));
+    //
+    //     $(this.selector).on('click', function (e) {
+    //         e.preventDefault();
+    //         $('html,body').animate({
+    //             scrollTop: 0
+    //         }, settings.speed);
+    //     });
+    //
+    // };
 
 });

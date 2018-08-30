@@ -1,0 +1,36 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * @var \Magento\Theme\Block\Html\Header $block
+ */
+ $dataElem =  'some info';
+
+?>
+<h1>Test first!</h1>
+<div class="our-first-component" data-bind="scope: 'first-component'" >
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                        "first-component": {
+                            "component": "Smile_FirstComponent/js/view/first-component",
+                            "template": "Smile_FirstComponent/first-component",
+                            "config": {
+                                "data": "<?php echo $dataElem; ?>"
+                            }
+                        }
+                    }
+                }
+            }
+    }
+</script>

@@ -1,0 +1,29 @@
+<h2>TODO LIST</h2>
+
+<!-- <form data-bind="submit: addNewToDo">
+    New item:
+    <input data-bind='value: task, valueUpdate: "afterkeydown"' />
+    <button type="submit" data-bind="enable: task().length > 0">Add</button>
+    <p>Your items:</p>
+    <select multiple="multiple" width="50" data-bind="options: todos"> </select>
+</form> -->
+
+<table>
+    <thead><tr>
+        <th>Task</th>
+    </tr></thead>
+    <tbody>
+    <!--<tbody data-bind="foreach: todos">-->
+
+    <!-- ko foreach: todos -->
+    <tr>
+
+        <td><label data-bind="text: task"></label></td>
+        <td><a href="#" data-bind="click : function(){ $item.removeToDo(event)}">Remove</a></td>
+
+    </tr>
+    <!-- /ko -->
+    </tbody>
+</table>
+<input class="txt" />
+<button data-bind="click: addNewToDo">Add NEW</button>

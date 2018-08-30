@@ -1,0 +1,62 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * @var \Magento\Theme\Block\Html\Header $block
+ */
+?>
+<span class="greet welcome" data-bind="scope: 'customer'" id="openModel" data-mage-init='{"myCustomModal":{}}'>
+    <img src="pub/static/frontend/Smile/megatheme/en_US/images/globe-online-world-icon--7.png"/>
+</span>
+<div id="myModel" style="display:none">
+    <h3>AMERICAS</h3>
+    <p>Canada</p>
+    <p>Canada</p>
+    <p>Mexico</p>
+    <p>United States</p>
+    <h3>ASIA PACIFIC</h3>
+    <p>Australia</p>
+    <p>Hong Kong</p>
+    <p>India</p>
+    <p>Korea</p>
+    <p>New Zeland</p>
+    <h3>EMEA</h3>
+    <p>Belgium</p>
+    <p>Belgique</p>
+    <p>Deutschland</p>
+    <p>Denmark</p>
+    <p>Espana</p>
+    <p>France</p>
+</div>
+<script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal'
+        ],
+        function($,modal) {
+            var options = {
+                type: 'popup',
+                responsive: true,
+                innerScroll: true,
+                modalClass: 'ololol',
+                title: 'Welcome to Nobel Biocare',
+                buttons: false
+            };
+            var popup = modal(options, $('#myModel'));
+            // $(document).ready(function(){
+            //     var popup = modal(options, $('#myModel'));
+            //     $('#myModel').modal('openModal');
+            // });
+            $("#openModel").on("click",function(){
+                $('#myModel').modal('openModal');
+            });
+        }
+    );
+</script>
+
