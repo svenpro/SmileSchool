@@ -1,9 +1,9 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd" layout="1column">
     <body>
         <referenceContainer name="content">
-            <container name="header.panel.test" htmlClass="paneltest wrapper-test" htmlTag="div"  >
-                <block class="Magento\Framework\View\Element\Template" name="each.pages.hello" template="Smile_Hello::helloworld_each.phtml" before="-" />
-            </container>
+            <!--<container name="header.panel.test" htmlClass="paneltest wrapper-test" htmlTag="div"  >-->
+                <!--<block class="Magento\Framework\View\Element\Template" name="each.pages.hello" template="Smile_Hello::helloworld_each.phtml" before="-" />-->
+            <!--</container>-->
             <block class="Magento\Framework\View\Element\Template" name="back.to.top" template="Smile_Hello::html/back-to-top.phtml" before="-" />
         </referenceContainer>
         <move element="name.of.an.element" destination="name.of.destination.element" as="new_alias" after="name.of.element.after" before="name.of.element.before"/>
