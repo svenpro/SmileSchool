@@ -5,7 +5,7 @@ define([
     'use strict';
 
 
-    console.log('my custom login');
+    // console.log('my custom login');
 
     return function(config, element) {
 

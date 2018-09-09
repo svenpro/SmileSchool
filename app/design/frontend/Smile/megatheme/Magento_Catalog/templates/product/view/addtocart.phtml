@@ -17,9 +17,7 @@
         <div class="field qty">
             <label class="label" for="qty"><span><?= /* @escapeNotVerified */ __('Qty') ?></span></label>
             <div class="control">
-                <button type="button" class="button-circle" data-role="minus">
-                    <span class="but-minus">-</span>
-                </button>
+                <button type="button" class="button-circle but-minus" data-role="minus"></button>
                 <input type="number"
                        name="qty"
                        id="qty"
@@ -28,9 +26,7 @@
                        class="input-text qty"
                        data-validate="<?= $block->escapeHtml(json_encode($block->getQuantityValidators())) ?>"
                        />
-                <button type="button" class="button-circle" data-role="plus">
-                    <span class="but-plus">+</span>
-                </button>
+                <button type="button" class="button-circle but-plus" data-role="plus"></button>
             </div>
         </div>
         <?php endif; ?>

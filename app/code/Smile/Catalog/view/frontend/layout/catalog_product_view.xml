@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="main.content">
+            <!--<block class="Magento\Framework\View\Element\Template" name="todo.component" template="Smile_ToDoList::html/todo_list.phtml" after="-" />-->
+        </referenceContainer>
+        <referenceBlock name="product.info.mailto" remove="true"/>
+        <referenceBlock name="view.addto.compare" remove="true"/>
+        <referenceBlock name="product.info.review" remove="true"/>
+        <referenceBlock name="product.info.addtocart" template="Smile_Catalog::html/smile_addtocart.phtml"/>
+        <move element="product.info.sku" destination="product.info.price" before="-" />
+    </body>
+</page>

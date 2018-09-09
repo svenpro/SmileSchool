@@ -14,10 +14,20 @@ define([
      * Menu Widget - this widget is a wrapper for the jQuery UI Menu
      */
     $.widget('smile.customMenu', $.mage.menu, {
+        options: {
+            someOpt: 'lalal'
+        },
+
         _create: function () {
             this._super();
-            console.log('Lol1');
+            // console.log('Lol1');
+            this.options.someOpt;
+            this._customMethod();
 
+        },
+
+        _customMethod: function() {
+            // console.log($(this.element).next('.dsd'));
         },
 
         _toggleMobileMode: function () {
@@ -72,7 +82,7 @@ define([
     $.widget('smile.customNavigation', $.mage.navigation, {
         _create: function () {
             this._super();
-            console.log('Lol2');
+            // console.log('Lol2');
         }
     });
 

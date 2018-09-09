@@ -8,7 +8,7 @@ define([
     //     console.log('my custom scr', $(element));
     // };
 
-    console.log('my custom scr');
+    // console.log('my custom scr');
 
     // $.fn.backToTop = function(options) {
     //
