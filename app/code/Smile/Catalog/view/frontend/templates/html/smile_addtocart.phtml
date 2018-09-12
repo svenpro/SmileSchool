@@ -16,8 +16,8 @@
             <?php if ($block->shouldRenderQuantity()): ?>
                 <div class="field qty">
                     <label class="label" for="qty"><span><?= /* @escapeNotVerified */ __('Qty') ?></span></label>
-                    <div class="control">
-                        <button type="button" class="button-circle but-minus" data-role="minus"></button>
+                    <div class="control" data-mage-init='{"qtyAddWidget": {}}'>
+                        <button type="button" class="button-circle but-minus"></button>
                         <input type="number"
                                name="qty"
                                id="qty"
@@ -26,7 +26,7 @@
                                class="input-text qty"
                                data-validate="<?= $block->escapeHtml(json_encode($block->getQuantityValidators())) ?>"
                         />
-                        <button type="button" class="button-circle but-plus" data-role="plus"></button>
+                        <button type="button" class="button-circle but-plus"></button>
                     </div>
                 </div>
             <?php endif; ?>
@@ -46,45 +46,7 @@
     {
         "#product_addtocart_form": {
             "Magento_Catalog/js/validate-product": {}
-        },
-        ".but-plus": {
-            "Smile_Catalog/js/qty-add-widget": {"role": "plus"}
         }
     }
 </script>
-<!--<script>-->
-<!--    require(-->
-<!--        [-->
-<!--            'jquery'-->
-<!--        ],-->
-<!--        function($) {-->
-<!---->
-<!--            $('[data-role="plus"]').click(function(e){-->
-<!--                e.preventDefault();-->
-<!---->
-<!--                var currentVal = parseInt($("input[name='qty']").val());-->
-<!--                if (!isNaN(currentVal)) {-->
-<!--                    $("input[name='qty']").val(currentVal + 1);-->
-<!--                } else {-->
-<!--                    $("input[name='qty']").val(0);-->
-<!--                }-->
-<!--            });-->
-<!---->
-<!--            $('[data-role="minus"]').click(function(e){-->
-<!--                e.preventDefault();-->
-<!---->
-<!--                var currentVal = parseInt($("input[name='qty']").val());-->
-<!---->
-<!--                if (currentVal === 0) {-->
-<!--                    $("input[name='qty']").val(0);-->
-<!--                } else if (!isNaN(currentVal)) {-->
-<!--                    $("input[name='qty']").val(currentVal - 1);-->
-<!--                } else {-->
-<!--                    $("input[name='qty']").val(0);-->
-<!--                }-->
-<!--            });-->
-<!---->
-<!--        }-->
-<!--    );-->
-<!--</script>-->
 

@@ -11,73 +11,44 @@ define([
 
     $.widget('smile.qtyAddWidget',  {
         options: {
-            role: ''
+            buttonClass: '.button-circle',
+            elemnetName: 'input[name=\'qty\']',
+            minus: 'but-minus',
+            plus: 'but-plus',
         },
 
         _create: function () {
 
-            var role = this.options.role;
-
-            if (role === "minus") {
-                console.log("minus");
-            } else if (role === "plus") {
-                console.log("plus");
-            }
-
+            console.log('init qty');
             this._clickButtonFunc();
-
-            // $('[data-role="plus"]').click(function(e){
-            //     e.preventDefault();
-            //
-            //     var currentVal = parseInt($("input[name='qty']").val());
-            //     if (!isNaN(currentVal)) {
-            //         $("input[name='qty']").val(currentVal + 1);
-            //     } else {
-            //         $("input[name='qty']").val(0);
-            //     }
-            // });
-            //
-            // $('[data-role="minus"]').click(function(e){
-            //     e.preventDefault();
-            //
-            //     var currentVal = parseInt($("input[name='qty']").val());
-            //
-            //     if (currentVal === 0) {
-            //         $("input[name='qty']").val(0);
-            //     } else if (!isNaN(currentVal)) {
-            //         $("input[name='qty']").val(currentVal - 1);
-            //     } else {
-            //         $("input[name='qty']").val(0);
-            //     }
-            // });
-
 
         },
 
         _clickButtonFunc: function () {
-            var role = this.options.role;
-            var currentVal;
+            var elName = this.options.elemnetName;
+            var minus = this.options.minus;
+            var plus = this.options.plus;
 
-            $('.button-circle').click(function (e) {
+            $(this.options.buttonClass).on("click", function (e) {
                 e.preventDefault();
 
-                if (this.dataset.role === "minus") {
-                    currentVal = parseInt($("input[name='qty']").val());
+                var self = this;
+                var currentVal = parseInt($(elName).val());
 
+
+                if (self.classList[1] === minus) {
                     if (currentVal === 0) {
-                        $("input[name='qty']").val(0);
+                        $(elName).val(0);
                     } else if (!isNaN(currentVal)) {
-                        $("input[name='qty']").val(currentVal - 1);
+                        $(elName).val(currentVal - 1);
                     } else {
-                        $("input[name='qty']").val(0);
+                        $(elName).val(0);
                     }
-                } else if (this.dataset.role === "plus") {
-                    currentVal = parseInt($("input[name='qty']").val());
-
+                } else if (self.classList[1] === plus) {
                     if (!isNaN(currentVal)) {
-                        $("input[name='qty']").val(currentVal + 1);
+                        $(elName).val(currentVal + 1);
                     } else {
-                        $("input[name='qty']").val(0);
+                        $(elName).val(0);
                     }
                 }
             });

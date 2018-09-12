@@ -7,9 +7,6 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="main.content">
-            <!--<block class="Magento\Framework\View\Element\Template" name="todo.component" template="Smile_ToDoList::html/todo_list.phtml" after="-" />-->
-        </referenceContainer>
         <referenceBlock name="product.info.mailto" remove="true"/>
         <referenceBlock name="view.addto.compare" remove="true"/>
         <referenceBlock name="product.info.review" remove="true"/>
